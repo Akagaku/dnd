@@ -108,6 +108,14 @@ td {
     color: #ff0000;
 }
 
+.trait-list {
+    list-style: none;
+}
+
+.trait-list li {
+    margin-bottom: 0.5rem;
+}
+
 .table {
     border-color: #000000;
     margin: 5rem 0;
