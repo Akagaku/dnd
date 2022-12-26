@@ -1,0 +1,149 @@
+body {
+    color: #000000;
+    overflow-x: hidden;
+}
+
+section {
+    margin: 10% 0;
+}
+
+h1 {
+    color: #aa0000;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.75rem;
+    font-variant: small-caps;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    border-bottom-style: solid;
+    border-color: #ddbb00;
+    border-width: 4px;
+    color: #aa0000;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.2rem;
+    font-variant: small-caps;
+    margin: 1rem 0;
+    padding-bottom: 0.25rem;
+}
+
+p {
+    color: #000000;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+li {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+th {
+    color: #aa0000;
+    font-size: 1.6rem;
+}
+
+td {
+    border-style: none;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.sidebar {
+    background-image: url("../img/leather.jpg");
+    background-size: 250px;
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar a {
+    color: #fff833;
+    display: block;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.sidebar-head-1 {
+    font-size: 1.6rem
+}
+
+.sidebar-head-2 {
+    font-size: 1.4rem;
+    margin-left: 0.75rem;
+}
+
+.sidebar-head-3 {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+.sidebar-head-4 {
+    font-size: 1rem;
+    margin-left: 2.25rem;
+}
+
+.main-body {
+    background-image: url("../img/parchment.jpg");
+    background-size: 600px;
+    margin-left: 250px;
+    padding: 4% 15%;
+}
+
+.main-body a {
+    color: #aa0000;
+    transition: 200ms;
+}
+
+.main-body a:hover {
+    color: #ff0000;
+}
+
+.table {
+    border-color: #000000;
+    margin: 5rem 0;
+}
+
+.table-h2 {
+    border-top: 2px solid;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.hit-dice-table {
+    float: right;
+    margin: 0 2rem 1rem;
+    width: 400px;
+}
+
+.ability-table {
+    float: right;
+    margin: 0 0 0 2rem;
+    width: 500px;
+}
+
+.modifier-table {
+    float:left;
+    margin: 0 2rem 0 0;
+    width: 300px;
+}
+
+.point-buy-table {
+    float: right;
+    margin: 0 0 0 2rem;
+    width: 400px;
+}
+
+.dragonborn-table {
+    margin: 0 0 2rem 0;
+}
