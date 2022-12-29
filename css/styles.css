@@ -13,7 +13,7 @@ h1 {
     font-size: 2.75rem;
     font-variant: small-caps;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem 0;
 }
 
 h2 {
@@ -24,8 +24,15 @@ h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 2.2rem;
     font-variant: small-caps;
-    margin: 1rem 0;
+    margin: 1.5rem 0 1rem 0;
     padding-bottom: 0.25rem;
+}
+
+h3 {
+    color: #aa0000;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.75rem;
+    font-variant: small-caps;
 }
 
 p {
@@ -38,7 +45,7 @@ p {
 li {
     font-size: 1.25rem;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 th {
@@ -108,24 +115,55 @@ td {
     color: #ff0000;
 }
 
+.alert {
+    background-color: #aaddff;
+    border-left: #0099ff solid 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.alert p, .alert li {
+    color: #0055cc;
+}
+
 .trait-list {
     list-style: none;
 }
 
-.trait-list li {
-    margin-bottom: 0.5rem;
-}
-
 .table {
     border-color: #000000;
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
 
 .table-h2 {
-    border-top: 2px solid;
-    color: #000000;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 1rem;
+    vertical-align: top;
+    width: 0;
+}
+
+table.statblock thead {
+    background-color: #aa0000;
+}
+
+table.statblock th {
+    border-style: none;
+    color: #ffffff;
+}
+
+table.statblock td {
+    border-bottom-style: solid;
+}
+
+.table-h1 {
+    background-color: #aa0000;
+}
+.table-h1 th {
+    color: #ffffff;
+}
+
+.class-table td {
+    font-size: 1rem;
 }
 
 .hit-dice-table {
