@@ -196,3 +196,98 @@ table.statblock td {
 .dragonborn-table {
     margin: 0 0 2rem 0;
 }
+
+.pencil-img {
+    width: 250px;
+    float: right;
+    margin: 1rem 0 0 2rem;
+}
+
+.dice-img {
+    width: 220px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.progress-img {
+    float: right;
+    margin-left: 14px;
+    width: 390px;
+}
+
+.chart-img {
+    float: left;
+    margin-right: 2rem;
+    width: 310px;
+}
+
+.navbar {
+    background-image: url("../img/leather.jpg");
+    background-size: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar a {
+    color: #fff833;
+    display: block;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 901px) {
+    .navbar {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .table {
+        float: none;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+
+    .navbar {
+        visibility: visible;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .main-body {
+        padding: 5%;
+        margin-left: 0;
+    }
+
+    .pencil-img {
+        width: 80%;
+        float: none;
+    }
+
+    .dice-img {
+        width: 80%;
+        margin: 1.5rem 2rem;
+        float: none;
+    }
+
+    .progress-img {
+        float: none;
+        margin-bottom: 1.5rem;
+        width: 90%;
+    }
+
+    .chart-img {
+        float: none;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+}

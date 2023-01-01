@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,10 +67,59 @@
     </div>
   </nav>
 
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <a class="sidebar-head-1" href="index.html">Home</a>
+        <a class="sidebar-head-1" href="#intro">Guide</a>
+        <a class="sidebar-head-2" href="guide.html#race">Race</a>
+        <a class="sidebar-head-2" href="guide.html#class">Class</a>
+        <a class="sidebar-head-2" href="guide.html#background">Background</a>
+        <a class="sidebar-head-2" href="guide.html#ability-scores">Ability Scores</a>
+        <a class="sidebar-head-2" href="guide.html#assembly">Everything Else</a>
+        <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
+        <div class="drop-div drop-resources">
+          <a class="sidebar-head-2 drop-btn" id="races">Races</a>
+          <div class="drop-div drop-races">
+            <a class="sidebar-head-3" href="races/aasimar.html">Aasimar</a>
+            <a class="sidebar-head-3" href="races/dragonborn.html">Dragonborn</a>
+            <a class="sidebar-head-3" href="races/dwarf.html">Dwarf</a>
+            <a class="sidebar-head-3" href="races/elf.html">Elf</a>
+            <a class="sidebar-head-3" href="races/genasi.html">Genasi</a>
+            <a class="sidebar-head-3" href="races/half-elf.html">Half-Elf</a>
+            <a class="sidebar-head-3" href="races/half-orc.html">Half-Orc</a>
+            <a class="sidebar-head-3" href="races/halfling.html">Halfling</a>
+            <a class="sidebar-head-3" href="races/human.html">Human</a>
+            <a class="sidebar-head-3" href="races/tiefling.html">Tiefling</a>
+          </div>
+          <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
+          <div class="drop-div drop-classes">
+            <a class="sidebar-head-3" href="classes/artificer.html">Artificer</a>
+            <a class="sidebar-head-3" href="classes/barbarian.html">Barbarian</a>
+            <a class="sidebar-head-3" href="classes/bard.html">Bard</a>
+            <a class="sidebar-head-3" href="classes/cleric.html">Cleric</a>
+            <a class="sidebar-head-3" href="classes/druid.html">Druid</a>
+            <a class="sidebar-head-3" href="classes/fighter.html">Fighter</a>
+            <a class="sidebar-head-3" href="classes/monk.html">Monk</a>
+            <a class="sidebar-head-3" href="classes/paladin.html">Paladin</a>
+            <a class="sidebar-head-3" href="classes/ranger.html">Ranger</a>
+            <a class="sidebar-head-3" href="classes/rogue.html">Rogue</a>
+            <a class="sidebar-head-3" href="classes/sorcerer.html">Sorcerer</a>
+            <a class="sidebar-head-3" href="classes/warlock.html">Warlock</a>
+            <a class="sidebar-head-3" href="classes/wizard.html">Wizard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <div class="main-body">
     <section id="intro">
       <h1>Character Creation Guide</h1>
-      <img src="img/pencil.png" style="width: 250px; float: right; margin: 1rem 0 0 2rem;">
+      <img src="img/pencil.png" class="pencil-img">
       <p>
         In this section, you will find a treasure trove of instructions to aid you in the creation of a Dungeons and Dragons character, including
         a full guide to filling out your character sheet. You're going to be joining me along the journey of character creation while I bring life
@@ -255,7 +306,7 @@
         whenever you make a roll using one of your proficiencies, you get to add your <em>proficiency bonus</em>. This number will change as you
         gain levels, but it starts as a +2.
       </p>
-      <img src="img/dice.png" alt="" style="width: 220px; float: left; margin-right: 1rem;">
+      <img src="img/dice.png" alt="polyhedral dice" class="dice-img">
       <p>
         "Other" encompasses just about everything from weapons to armor to shields to tools to vehicles to gaming sets to languages.
         Coincidentally, there's a section at the bottom of the character sheet just for these miscellaneous proficiencies, labeled "Other
@@ -548,7 +599,7 @@
 
     <section id="assembly">
       <h1>Putting It All Together</h1>
-      <img src="img/progress.jpg" alt="" style="float: right; margin-left: 14px; width: 390px;">
+      <img src="img/progress.jpg" alt="character sheet progress" class="progress-img">
       <p>
         At this point, we're mostly done with your character. We've already finished all the sections on the character sheet marked in blue.
         Those marked in red are for use in-game, and we won't be going over them. That leaves only a few boxes for us to fill.
@@ -598,7 +649,7 @@
         </p>
 
         <h2>The One You Already Know</h2>
-        <img src="img/chart.jpg" alt="" style="float: left;  margin-right: 2rem; width: 310px;">
+        <img src="img/chart.jpg" alt="alignment chart" class="chart-img">
         <p>
           A rule that needs no introduction, this is probably the most popular game mechanic ever invented. It's kind of taken on a life of its
           own, to the extent that just about everyone has seen the chart on the left. The funny thing is most of them don't even know that it
