@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,55 +25,73 @@
 </head>
 
 <body>
-  <nav class="sidebar" style="overflow-y: scroll;">
-    <a class="sidebar-head-1" href="../index.html">Home</a>
-    <a class="sidebar-head-1" href="../guide.html">Guide</a>
-      <a class="sidebar-head-2" href="../guide.html#race">Race</a>
-      <a class="sidebar-head-2" href="../guide.html#class">Class</a>
-      <a class="sidebar-head-2" href="../guide.html#background">Background</a>
-      <a class="sidebar-head-2" href="../guide.html#ability-scores">Ability Scores</a>
-      <a class="sidebar-head-2" href="../guide.html#assembly">Everything Else</a>
-    <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
-    <div class="drop-div drop-resources">
-      <a class="sidebar-head-2 drop-btn" id="races">Races</a>
-      <div class="drop-div drop-races">
-        <a class="sidebar-head-3" href="../races/aasimar.html">Aasimar</a>
-        <a class="sidebar-head-3" href="../races/dragonborn.html">Dragonborn</a>
-        <a class="sidebar-head-3" href="../races/dwarf.html">Dwarf</a>
-        <a class="sidebar-head-3" href="../races/elf.html">Elf</a>
-        <a class="sidebar-head-3" href="../races/genasi.html">Genasi</a>
-        <a class="sidebar-head-3" href="../races/half-elf.html">Half-Elf</a>
-        <a class="sidebar-head-3" href="../races/half-orc.html">Half-Orc</a>
-        <a class="sidebar-head-3" href="../races/halfling.html">Halfling</a>
-        <a class="sidebar-head-3" href="../races/human.html">Human</a>
-        <a class="sidebar-head-3" href="../races/tiefling.html">Tiefling</a>
-      </div>
-      <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
-      <div class="drop-div drop-classes">
-        <a class="sidebar-head-3" href="artificer.html">Artificer</a>
-        <a class="sidebar-head-3" href="barbarian.html">Barbarian</a>
-        <a class="sidebar-head-3" href="bard.html">Bard</a>
-        <a class="sidebar-head-3" href="cleric.html">Cleric</a>
-        <a class="sidebar-head-3" href="druid.html">Druid</a>
-        <a class="sidebar-head-3" href="fighter.html">Fighter</a>
-        <a class="sidebar-head-3" href="monk.html">Monk</a>
-        <a class="sidebar-head-3" href="paladin.html">Paladin</a>
-        <a class="sidebar-head-3" href="ranger.html">Ranger</a>
-        <a class="sidebar-head-3" href="rogue.html">Rogue</a>
-        <a class="sidebar-head-3" href="sorcerer.html">Sorcerer</a>
-        <a class="sidebar-head-3" href="warlock.html">Warlock</a>
-        <a class="sidebar-head-3" href="wizard.html">Wizard</a>
-      </div>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../guide.html#race">Race</a></li>
+          <li><a href="../guide.html#class">Class</a></li>
+          <li><a href="../guide.html#background">Background</a></li>
+          <li><a href="../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../races/elf.html">Elf</a></li>
+            <li><a href="../races/genasi.html">Genasi</a></li>
+            <li><a href="../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../races/halfling.html">Halfling</a></li>
+            <li><a href="../races/human.html">Human</a></li>
+            <li><a href="../races/tielfing.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="artificer.html">Artificer</a></li>
+            <li><a href="barbarian.html">Barbarian</a></li>
+            <li><a href="bard.html">Bard</a></li>
+            <li><a href="cleric.html">Cleric</a></li>
+            <li><a href="druid.html">Druid</a></li>
+            <li><a href="fighter.html">Fighter</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="paladin.html">Paladin</a></li>
+            <li><a href="ranger.html">Ranger</a></li>
+            <li><a href="rogue.html">Rogue</a></li>
+            <li><a href="sorcerer.html">Sorcerer</a></li>
+            <li><a href="warlock.html">Warlock</a></li>
+            <li><a href="wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
     </div>
-  </nav>  
+  </nav>
 
-  <div class="main-body">
+  <main>
     <h1>Artificer</h1>
+    <p>
+      Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex
+      system waiting to be decoded and then harnessed in their spells and inventions. You can find everything you need to play one of these
+      inventors in the next few sections.
+    </p>
+    <p>
+      Artificers use a variety of tools to channel their arcane power. To cast a spell, an artificer might use alchemist's supplies to create a
+      potent elixir, calligrapher's supplies to inscribe a sigil of power, or tinker's tools to craft a temporary charm. The magic of artificers
+      is tied to their tools and their talents, and few other characters can produce the right tool for a job as well as an artificer.
+    </p>
+    <p><em>You must have an Intelligence score of 13 or higher in order to multiclass in or out of this class.</em></p>
+    
     <table class="table table-striped class-table">
       <thead>
         <tr>
           <th colspan="4">The Artificer</th>
-          <th colspan="7" style="text-align: right;">Spell Slots per Spell Level</th>
+          <th colspan="7" style="text-align: right;">Spell Slots</th>
         </tr>
         <tr>
           <th class="table-h2">Level</th>
@@ -413,88 +433,88 @@
       casting spells in a conventional way; you appear to produce wonders from mundane items and outlandish inventions.
     </p>
 
-      <h3>Tools Required</h3>
-      <p>
-        You produce your artificer spell effects through your tools. You must have a spellcasting focus - specifically thieves' tools or some kind
-        of artisan's tool - in hand when you cast any spell with this Spellcasting feature (meaning the spell has an "M" component when you cast
-        it). You must be proficient with the tool to use it in this way. See the equipment chapter in the Player's Handbook for descriptions of
-        these tools.
-      </p>
-      <p>After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus.</p>
+    <h3>Tools Required</h3>
+    <p>
+      You produce your artificer spell effects through your tools. You must have a spellcasting focus - specifically thieves' tools or some kind
+      of artisan's tool - in hand when you cast any spell with this Spellcasting feature (meaning the spell has an "M" component when you cast
+      it). You must be proficient with the tool to use it in this way. See the equipment chapter in the Player's Handbook for descriptions of
+      these tools.
+    </p>
+    <p>After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus.</p>
 
-      <h3>Cantrips</h3>
-      <p>
-        At 1st level, you know two cantrips of your choice from the artificer spell list. At higher levels, you learn additional artificer cantrips
-        of your choice, as shown in the Cantrips Known column of the Artificer table.
-      </p>
-      <p>
-        When you gain a level in this class, you can replace one of the artificer cantrips you know with another cantrip from the artificer spell
-        list.
-      </p>
+    <h3>Cantrips</h3>
+    <p>
+      At 1st level, you know two cantrips of your choice from the artificer spell list. At higher levels, you learn additional artificer cantrips
+      of your choice, as shown in the Cantrips Known column of the Artificer table.
+    </p>
+    <p>
+      When you gain a level in this class, you can replace one of the artificer cantrips you know with another cantrip from the artificer spell
+      list.
+    </p>
 
-      <h3>Preparing and Casting Spells</h3>
-      <p>
-        The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer spells of 1st level
-        or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
-      </p>
-      <p>
-        You prepare the list of artificer spells that are available for you to cast, choosing from the artificer spell list. When you do so, choose
-        a number of artificer spells equal to your Intelligence modifier + half your artificer level, rounded down (minimum of one spell). The
-        spells must be of a level for which you have spell slots.
-      </p>
-      <p>
-        For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list
-        of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can
-        cast it using a lst-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
-      </p>
-      <p>
-        You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells requires time spent
-        tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list.
-      </p>
+    <h3>Preparing and Casting Spells</h3>
+    <p>
+      The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer spells of 1st level
+      or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+    </p>
+    <p>
+      You prepare the list of artificer spells that are available for you to cast, choosing from the artificer spell list. When you do so, choose
+      a number of artificer spells equal to your Intelligence modifier + half your artificer level, rounded down (minimum of one spell). The
+      spells must be of a level for which you have spell slots.
+    </p>
+    <p>
+      For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list
+      of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can
+      cast it using a lst-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
+    </p>
+    <p>
+      You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells requires time spent
+      tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list.
+    </p>
 
-      <h3>Spellcasting Ability</h3>
-      <p>
-        Intelligence is your spellcasting ability for your artificer spells; your understanding of the theory behind magic allows you to wield
-        these spells with superior skill. You use your Intelligence whenever an artificer spell refers to your spellcasting ability. In addition,
-        you use your Intelligence modifier when setting the saving throw DC for an artificer spell you cast and when making an attack roll with
-        one.
-      </p>
-      <p><strong>Spell Save DC =</strong> 8 + your proficiency bonus + your Intelligence modifier</p>
-      <p><strong>Spell attack modifier = </strong> your proficiency bonus + your Intelligence modifier</p>
+    <h3>Spellcasting Ability</h3>
+    <p>
+      Intelligence is your spellcasting ability for your artificer spells; your understanding of the theory behind magic allows you to wield
+      these spells with superior skill. You use your Intelligence whenever an artificer spell refers to your spellcasting ability. In addition,
+      you use your Intelligence modifier when setting the saving throw DC for an artificer spell you cast and when making an attack roll with
+      one.
+    </p>
+    <p><strong>Spell Save DC =</strong> 8 + your proficiency bonus + your Intelligence modifier</p>
+    <p><strong>Spell attack modifier = </strong> your proficiency bonus + your Intelligence modifier</p>
 
-      <h3>Ritual Casting</h3>
-      <p>You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+    <h3>Ritual Casting</h3>
+    <p>You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
     
     <h2 id="infuse-item">Infuse Item</h2>
     <p>At 2nd level, you've gained the ability to imbue mundane items with certain magical infusions, turning those objects into magic items.</p>
 
-      <h3>Infusions Known</h3>
-      <p>
-        When you gain this feature, pick four artificer infusions to learn. You learn additional infusions of your choice when you reach certain
-        levels in this class, as shown in the Infusions Known column of the Artificer table.
-      </p>
-      <p>Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one.</p>
+    <h3>Infusions Known</h3>
+    <p>
+      When you gain this feature, pick four artificer infusions to learn. You learn additional infusions of your choice when you reach certain
+      levels in this class, as shown in the Infusions Known column of the Artificer table.
+    </p>
+    <p>Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one.</p>
 
-      <h3>Infusing and Item</h3>
-      <p>
-        Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a
-        magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires
-        attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using
-        the normal process for attunement (see the attunement rules in the Dungeon Master's Guide).
-      </p>
-      <p>
-        Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days equal to your Intelligence
-        modifier (minimum of 1 day). The infusion also vanishes if you replace your knowledge of the infusion.
-      </p>
-      <p>
-        You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column
-        of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no
-        object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion ends,
-        and then the new infusion applies.
-      </p>
-      <p>
-        If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly appear in and around its space.
-      </p>
+    <h3>Infusing and Item</h3>
+    <p>
+      Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a
+      magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires
+      attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using
+      the normal process for attunement (see the attunement rules in the Dungeon Master's Guide).
+    </p>
+    <p>
+      Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days equal to your Intelligence
+      modifier (minimum of 1 day). The infusion also vanishes if you replace your knowledge of the infusion.
+    </p>
+    <p>
+      You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column
+      of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no
+      object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion ends,
+      and then the new infusion applies.
+    </p>
+    <p>
+      If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly appear in and around its space.
+    </p>
 
     <h2 id="artificer-specialist">Artificer Specialist</h2>
     <p>
@@ -1111,7 +1131,7 @@
         <tr>
           <td colspan="6">
             <em><strong>Force-Empowered Rend.</strong> Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target
-            you can see. <em>Hit:</em> 1d8 + PB fofce damage
+            you can see. <em>Hit:</em> 1d8 + PB force damage
           </td>
           <td colspan="6"></td>
         </tr>
@@ -1162,8 +1182,6 @@
       <li>Your steel defender gains a +2 bonus to Armor Class.</li>
       <li> Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier.</li>
     </ul>
-  </div>
-
+  </main>
 </body>
-
 </html>

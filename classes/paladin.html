@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,54 +25,67 @@
 </head>
 
 <body>
-  <nav class="sidebar" style="overflow-y: scroll;">
-    <a class="sidebar-head-1" href="../index.html">Home</a>
-    <a class="sidebar-head-1" href="../guide.html">Guide</a>
-      <a class="sidebar-head-2" href="../guide.html#race">Race</a>
-      <a class="sidebar-head-2" href="../guide.html#class">Class</a>
-      <a class="sidebar-head-2" href="../guide.html#background">Background</a>
-      <a class="sidebar-head-2" href="../guide.html#ability-scores">Ability Scores</a>
-      <a class="sidebar-head-2" href="../guide.html#assembly">Everything Else</a>
-    <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
-    <div class="drop-div drop-resources">
-      <a class="sidebar-head-2 drop-btn" id="races">Races</a>
-      <div class="drop-div drop-races">
-        <a class="sidebar-head-3" href="../races/aasimar.html">Aasimar</a>
-        <a class="sidebar-head-3" href="../races/dragonborn.html">Dragonborn</a>
-        <a class="sidebar-head-3" href="../races/dwarf.html">Dwarf</a>
-        <a class="sidebar-head-3" href="../races/elf.html">Elf</a>
-        <a class="sidebar-head-3" href="../races/genasi.html">Genasi</a>
-        <a class="sidebar-head-3" href="../races/half-elf.html">Half-Elf</a>
-        <a class="sidebar-head-3" href="../races/half-orc.html">Half-Orc</a>
-        <a class="sidebar-head-3" href="../races/halfling.html">Halfling</a>
-        <a class="sidebar-head-3" href="../races/human.html">Human</a>
-        <a class="sidebar-head-3" href="../races/tiefling.html">Tiefling</a>
-      </div>
-      <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
-      <div class="drop-div drop-classes">
-        <a class="sidebar-head-3" href="artificer.html">Artificer</a>
-        <a class="sidebar-head-3" href="barbarian.html">Barbarian</a>
-        <a class="sidebar-head-3" href="bard.html">Bard</a>
-        <a class="sidebar-head-3" href="cleric.html">Cleric</a>
-        <a class="sidebar-head-3" href="druid.html">Druid</a>
-        <a class="sidebar-head-3" href="fighter.html">Fighter</a>
-        <a class="sidebar-head-3" href="monk.html">Monk</a>
-        <a class="sidebar-head-3" href="paladin.html">Paladin</a>
-        <a class="sidebar-head-3" href="ranger.html">Ranger</a>
-        <a class="sidebar-head-3" href="rogue.html">Rogue</a>
-        <a class="sidebar-head-3" href="sorcerer.html">Sorcerer</a>
-        <a class="sidebar-head-3" href="warlock.html">Warlock</a>
-        <a class="sidebar-head-3" href="wizard.html">Wizard</a>
-      </div>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../guide.html#race">Race</a></li>
+          <li><a href="../guide.html#class">Class</a></li>
+          <li><a href="../guide.html#background">Background</a></li>
+          <li><a href="../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../races/elf.html">Elf</a></li>
+            <li><a href="../races/genasi.html">Genasi</a></li>
+            <li><a href="../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../races/halfling.html">Halfling</a></li>
+            <li><a href="../races/human.html">Human</a></li>
+            <li><a href="../races/tielfing.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="artificer.html">Artificer</a></li>
+            <li><a href="barbarian.html">Barbarian</a></li>
+            <li><a href="bard.html">Bard</a></li>
+            <li><a href="cleric.html">Cleric</a></li>
+            <li><a href="druid.html">Druid</a></li>
+            <li><a href="fighter.html">Fighter</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="paladin.html">Paladin</a></li>
+            <li><a href="ranger.html">Ranger</a></li>
+            <li><a href="rogue.html">Rogue</a></li>
+            <li><a href="sorcerer.html">Sorcerer</a></li>
+            <li><a href="warlock.html">Warlock</a></li>
+            <li><a href="wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
     </div>
-  </nav>  
+  </nav>
 
-  <div class="main-body">
+  <main>
+    <h1>Paladin</h1>
+    <p>
+      Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of
+      desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond.
+    </p>
+    <p><em>You must have a Charisma score and a Strength score of 13 or higher in order to multiclass in or out of this class.</em></p>
+
     <table class="table table-striped class-table">
       <thead>
         <tr>
           <th colspan="3">The Paladin</th>
-          <th colspan="6">Spell Slots per Level</th>
+          <th colspan="6">Spell Slots</th>
         </tr>
         <tr>
           <th class="table-h2">Level</th>
@@ -310,7 +325,7 @@
       <li>(a) a martial weapon and a shield or (b) two martial weapons</li>
       <li>(a) five javelins or (b) any simple melee weapon</li>
       <li>(a) a priest's pack or (b) an explorer's pack</li>
-      <li>Chain mail and a holy symbol</li>
+      <li>chain mail and a holy symbol</li>
     </ul>
 
     <h2 id="divine-sense">Divine Sense</h2>
@@ -347,11 +362,15 @@
       than once, even if you later get to choose again.
     </p>
     <ul>
-      <li><strong>Archery.</strong> You gain a +2 bonus to attack rolls you make with ranged weapons.</li>
+      <li>
+        <strong>Blessed Warrior.</strong> You learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you,
+        and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with
+        another cantrip from the cleric spell list.
+      </li>
       <li>
         <strong>Blind Fighting.</strong> You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that
-        isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the
-        creature successfully hides from you.
+        isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless
+        the creature successfully hides from you.
       </li>
       <li><strong>Defense.</strong> While you are wearing armor, you gain a +1 bonus to AC.</li>
       <li>
@@ -364,42 +383,13 @@
         two-handed or versatile property for you to gain this benefit.
       </li>
       <li>
-        <strong>Interception.</strong> When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use
-        your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a
-        shield or a simple or martial weapon to use this reaction.
+        <strong>Interception.</strong> When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can
+        use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding
+        a shield or a simple or martial weapon to use this reaction.
       </li>
       <li>
         <strong>Protection.</strong> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your
         reaction to impose disadvantage on the attack roll. You must be wielding a shield.
-      </li>
-      <li>
-        <strong>Superior Technique.</strong> You learn one maneuver of your choice from among those available to the Battle Master archetype. If a
-        maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your
-        proficiency bonus + your Strength or Dexterity modifier (your choice).
-        <ul>
-          <li>
-            You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used
-            to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a
-            short or long rest.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Thrown Weapon Fighting.</strong> You can draw a weapon that has the thrown property as part of the attack you make with the weapon.
-        <ul>
-          <li>In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Two-Weapon Fighting.</strong> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the
-        second attack.
-      </li>
-      <li>
-        <strong>Unarmed Fighting.</strong> Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you
-        aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.
-        <ul>
-          <li>At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</li>
-        </ul>
       </li>
     </ul>
 
@@ -1377,7 +1367,7 @@
         If you want to play as a paladin who's betrayed their oath, this subclass may not actually be for you. Contrary to its name, the
         mechanics of this "oath" are less representative of a fallen paladin, and more in line with an Evil paladin. All was well and good in
         older editions when all paladins had to be Lawful Good, but the Oathbreaker may not be the best thematic match for former paladins of
-        less ethically-centered oaths, such as Conquest or Vengeance.
+        less ethically-concerned oaths, such as Conquest, Crown, Glory, or Vengeance.
       </p>
     </div>
 
@@ -1452,7 +1442,6 @@
       attack against the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier.
     </p>
     <p>After activating the aura, you can't do so again until you finish a long rest.</p>
-  </div>
+  </main>
 </body>
-
 </html>

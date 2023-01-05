@@ -1,293 +1,186 @@
-body {
-    color: #000000;
-    overflow-x: hidden;
-}
-
-section {
-    margin: 10% 0;
-}
-
-h1 {
-    color: #aa0000;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2.75rem;
-    font-variant: small-caps;
-    font-weight: 500;
-    margin: 2rem 0 1rem 0;
-}
-
-h2 {
-    border-bottom-style: solid;
-    border-color: #ddbb00;
-    border-width: 4px;
-    color: #aa0000;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2.2rem;
-    font-variant: small-caps;
-    margin: 2rem 0 1rem 0;
-    padding-bottom: 0.25rem;
-}
-
-h3 {
-    color: #aa0000;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.75rem;
-    font-variant: small-caps;
-    margin-top: 2rem;
-}
-
-p {
-    color: #000000;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    /* margin-bottom: 1.5rem; */
-}
-
-li {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-
-th {
-    color: #aa0000;
-    font-size: 1.6rem;
-}
-
-td {
-    border-style: none;
-    color: #000000;
-    font-size: 1.25rem;
-}
-
-.sidebar {
+/********************************* SIDEBAR *********************************/
+#sidebar {
     background-image: url("../img/leather.jpg");
-    background-size: 250px;
-    height: 100vh;
-    padding: 1rem;
-    position: fixed;
+    background-size: 100%;
     width: 250px;
 }
 
-.sidebar a {
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav li, nav a {
     color: #fff833;
-    display: block;
     font-family: 'Libre Baskerville', serif;
-    line-height: 2;
+    font-size: 1.25rem;
     text-decoration: none;
     transition: 200ms;
 }
 
-.sidebar a:hover {
+nav a:hover {
     color: #ffffff;
 }
 
-.sidebar-head-1 {
-    font-size: 1.6rem
+@media screen and (min-width: 576px) {
+    #sidebarCollapse {
+        display: none;
+    }
+
+    .offcanvas-backdrop {
+        display: none;
+    }
 }
 
-.sidebar-head-2 {
-    font-size: 1.4rem;
-    margin-left: 0.75rem;
-}
-
-.sidebar-head-3 {
-    font-size: 1.2rem;
-    margin-left: 1.5rem;
-}
-.sidebar-head-4 {
-    font-size: 1rem;
-    margin-left: 2.25rem;
-}
-
-.main-body {
+/********************************* MAIN BODY CONTENT *********************************/
+main {
     background-image: url("../img/parchment.jpg");
-    background-size: 600px;
-    margin-left: 250px;
-    padding: 4% 15%;
+    background-size: 55%;
 }
 
-.main-body a {
+@media screen and (min-width: 576px) {
+    main {
+        margin-left: 250px;
+        padding: 7% 15%;
+    }
+}
+
+h1, h2, h3, h4 {
+    color: #aa0000;
+    font-family: 'Libre Baskerville';
+    font-variant: small-caps;
+    margin: 2rem 0 1rem;
+}
+
+h2 {
+    border-bottom: solid 4px #ddbb00;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+main a {
     color: #aa0000;
     transition: 200ms;
 }
 
-.main-body a:hover {
+main a:hover {
     color: #ff0000;
 }
 
-.alert {
-    background-color: #aaddff;
-    border-left: #0099ff solid 5px;
-    border-radius: 5px;
+main li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+th {
+    border-style: none;
+    color: #aa0000;
+    font-size: 1.2rem;
+}
+
+td {
+    border-style: none;
+    font-size: 1.2rem;
+}
+
+.nav-box {
+    background-color: #fffaf0;
+    border: solid 1px #aa0000;
+    border-radius: 4px;
+    float: right;
+    line-height: 0.5;
+    padding: 1.5rem;
+    margin-left: 1rem;
     width: fit-content;
 }
 
-.alert p, .alert li {
-    color: #0055cc;
-    font-size: 1.1rem;
+.nav-box a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.alert {
+    color: #0055aa;
+    background-color: #aaddff;
+    border-left: solid 6px #00aaff;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.alert p {
     margin: 0.5rem;
 }
 
-.trait-list {
-    list-style: none;
+/********************************* GUIDE IMAGES *********************************/
+.pencil-img {
+    float: right;
+    margin-left: 2rem;
+    width: 240px;
 }
 
-.table {
-    border-color: #000000;
-    margin: 2rem 0;
+.dice-img {
+    float: right;
+    width: 300px;
 }
 
+.progress-img {
+    float: right;
+    margin: 1rem 0 0 2rem;
+    width: 300px;
+}
+
+.chart-img {
+    float: left;
+    margin-right: 2rem;
+    width: 300px;
+}
+
+/********************************* GUIDE TABLES *********************************/
+.hd-table {
+    float: left;
+    margin-right: 2rem;
+    width: 300px;
+}
+
+.ability-table {
+    float: right;
+    margin: 0 0 2rem 2rem;
+    width: 500px;
+}
+
+.modifier-table {
+    float: left;
+    margin-right: 2rem;
+    width: 300px;
+}
+
+.point-buy-table {
+    float: right;
+    margin-left: 2rem;
+    width: 400px;
+}
+
+/********************************* CLASS CONTENT *********************************/
 .table-h2 {
     font-size: 1rem;
-    margin: 0 1rem;
     vertical-align: top;
     width: 0;
 }
 
-table.statblock thead {
-    background-color: #aa0000;
-}
-
-table.statblock th {
-    border-style: none;
-    color: #ffffff;
-}
-
-table.statblock td {
-    border-bottom-style: solid;
-}
-
-.table-h1 {
-    background-color: #aa0000;
-}
-.table-h1 th {
-    color: #ffffff;
+.class-table {
+    margin-top: 2rem;
 }
 
 .class-table td {
     font-size: 1rem;
 }
 
-.hit-dice-table {
-    float: right;
-    margin: 0 2rem 1rem;
-    width: 400px;
+.statblock td {
+    border-bottom: solid 1px;
 }
 
-.ability-table {
-    float: right;
-    margin: 0 0 0 2rem;
-    width: 500px;
-}
-
-.modifier-table {
-    float:left;
-    margin: 0 2rem 0 0;
-    width: 300px;
-}
-
-.point-buy-table {
-    float: right;
-    margin: 0 0 0 2rem;
-    width: 400px;
-}
-
-.dragonborn-table {
-    margin: 0 0 2rem 0;
-}
-
-.pencil-img {
-    width: 250px;
-    float: right;
-    margin: 1rem 0 0 2rem;
-}
-
-.dice-img {
-    width: 220px;
-    float: left;
-    margin-right: 1rem;
-}
-
-.progress-img {
-    float: right;
-    margin-left: 14px;
-    width: 390px;
-}
-
-.chart-img {
-    float: left;
-    margin-right: 2rem;
-    width: 310px;
-}
-
-.navbar {
-    background-image: url("../img/leather.jpg");
-    background-size: 100%;
-    overflow-y: scroll;
-    position: fixed;
-    width: 100%;
-}
-
-.navbar a {
-    color: #fff833;
-    display: block;
-    font-family: 'Libre Baskerville', serif;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    transition: 200ms;
-}
-
-.navbar a:hover {
+.statblock th {
+    background-color: #aa0000;
     color: #ffffff;
-}
-
-@media screen and (min-width: 901px) {
-    .navbar {
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .table {
-        float: none;
-        margin-bottom: 2rem;
-        width: 90%;
-    }
-
-    .navbar {
-        visibility: visible;
-    }
-
-    .sidebar {
-        visibility: hidden;
-    }
-
-    .main-body {
-        padding: 5%;
-        margin-left: 0;
-    }
-
-    .pencil-img {
-        width: 80%;
-        float: none;
-    }
-
-    .dice-img {
-        width: 80%;
-        margin: 1.5rem 2rem;
-        float: none;
-    }
-
-    .progress-img {
-        float: none;
-        margin-bottom: 1.5rem;
-        width: 90%;
-    }
-
-    .chart-img {
-        float: none;
-        margin-bottom: 1.5rem;
-        width: 100%;
-    }
 }

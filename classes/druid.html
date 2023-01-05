@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,54 +25,67 @@
 </head>
 
 <body>
-  <nav class="sidebar" style="overflow-y: scroll;">
-    <a class="sidebar-head-1" href="../index.html">Home</a>
-    <a class="sidebar-head-1" href="../guide.html">Guide</a>
-      <a class="sidebar-head-2" href="../guide.html#race">Race</a>
-      <a class="sidebar-head-2" href="../guide.html#class">Class</a>
-      <a class="sidebar-head-2" href="../guide.html#background">Background</a>
-      <a class="sidebar-head-2" href="../guide.html#ability-scores">Ability Scores</a>
-      <a class="sidebar-head-2" href="../guide.html#assembly">Everything Else</a>
-    <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
-    <div class="drop-div drop-resources">
-      <a class="sidebar-head-2 drop-btn" id="races">Races</a>
-      <div class="drop-div drop-races">
-        <a class="sidebar-head-3" href="../races/aasimar.html">Aasimar</a>
-        <a class="sidebar-head-3" href="../races/dragonborn.html">Dragonborn</a>
-        <a class="sidebar-head-3" href="../races/dwarf.html">Dwarf</a>
-        <a class="sidebar-head-3" href="../races/elf.html">Elf</a>
-        <a class="sidebar-head-3" href="../races/genasi.html">Genasi</a>
-        <a class="sidebar-head-3" href="../races/half-elf.html">Half-Elf</a>
-        <a class="sidebar-head-3" href="../races/half-orc.html">Half-Orc</a>
-        <a class="sidebar-head-3" href="../races/halfling.html">Halfling</a>
-        <a class="sidebar-head-3" href="../races/human.html">Human</a>
-        <a class="sidebar-head-3" href="../races/tiefling.html">Tiefling</a>
-      </div>
-      <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
-      <div class="drop-div drop-classes">
-        <a class="sidebar-head-3" href="artificer.html">Artificer</a>
-        <a class="sidebar-head-3" href="barbarian.html">Barbarian</a>
-        <a class="sidebar-head-3" href="bard.html">Bard</a>
-        <a class="sidebar-head-3" href="cleric.html">Cleric</a>
-        <a class="sidebar-head-3" href="druid.html">Druid</a>
-        <a class="sidebar-head-3" href="fighter.html">Fighter</a>
-        <a class="sidebar-head-3" href="monk.html">Monk</a>
-        <a class="sidebar-head-3" href="paladin.html">Paladin</a>
-        <a class="sidebar-head-3" href="ranger.html">Ranger</a>
-        <a class="sidebar-head-3" href="rogue.html">Rogue</a>
-        <a class="sidebar-head-3" href="sorcerer.html">Sorcerer</a>
-        <a class="sidebar-head-3" href="warlock.html">Warlock</a>
-        <a class="sidebar-head-3" href="wizard.html">Wizard</a>
-      </div>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../guide.html#race">Race</a></li>
+          <li><a href="../guide.html#class">Class</a></li>
+          <li><a href="../guide.html#background">Background</a></li>
+          <li><a href="../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../races/elf.html">Elf</a></li>
+            <li><a href="../races/genasi.html">Genasi</a></li>
+            <li><a href="../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../races/halfling.html">Halfling</a></li>
+            <li><a href="../races/human.html">Human</a></li>
+            <li><a href="../races/tielfing.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="artificer.html">Artificer</a></li>
+            <li><a href="barbarian.html">Barbarian</a></li>
+            <li><a href="bard.html">Bard</a></li>
+            <li><a href="cleric.html">Cleric</a></li>
+            <li><a href="druid.html">Druid</a></li>
+            <li><a href="fighter.html">Fighter</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="paladin.html">Paladin</a></li>
+            <li><a href="ranger.html">Ranger</a></li>
+            <li><a href="rogue.html">Rogue</a></li>
+            <li><a href="sorcerer.html">Sorcerer</a></li>
+            <li><a href="warlock.html">Warlock</a></li>
+            <li><a href="wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
     </div>
-  </nav>  
+  </nav>
 
-  <div class="main-body">
+  <main>
+    <h1>Druid</h1>
+    <p>
+      Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's
+      resilience, cunning, and fury. They claim no mastery over nature, but see themselves as extensions of nature's indomitable will.
+    </p>
+    <p><em>You must have a Wisdom score of 13 or higher in order to multiclass in or out of this class.</em></p>
+
     <table class="table table-striped class-table">
       <thead>
         <tr>
           <th colspan="3">The Druid</th>
-          <th colspan="9">Spell Slots per Level</th>
+          <th colspan="9">Spell Slots</th>
         </tr>
         <tr>
           <th class="table-h2">Level</th>
@@ -1426,8 +1441,6 @@
       immediately rise to your feet.
     </p>
     <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
-  </div>
-
+  </main>
 </body>
-
 </html>

@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,49 +25,652 @@
 </head>
 
 <body>
-  <nav class="sidebar" style="overflow-y: scroll;">
-    <a class="sidebar-head-1" href="../index.html">Home</a>
-    <a class="sidebar-head-1" href="../guide.html">Guide</a>
-      <a class="sidebar-head-2" href="../guide.html#race">Race</a>
-      <a class="sidebar-head-2" href="../guide.html#class">Class</a>
-      <a class="sidebar-head-2" href="../guide.html#background">Background</a>
-      <a class="sidebar-head-2" href="../guide.html#ability-scores">Ability Scores</a>
-      <a class="sidebar-head-2" href="../guide.html#assembly">Everything Else</a>
-    <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
-    <div class="drop-div drop-resources">
-      <a class="sidebar-head-2 drop-btn" id="races">Races</a>
-      <div class="drop-div drop-races">
-        <a class="sidebar-head-3" href="../races/aasimar.html">Aasimar</a>
-        <a class="sidebar-head-3" href="../races/dragonborn.html">Dragonborn</a>
-        <a class="sidebar-head-3" href="../races/dwarf.html">Dwarf</a>
-        <a class="sidebar-head-3" href="../races/elf.html">Elf</a>
-        <a class="sidebar-head-3" href="../races/genasi.html">Genasi</a>
-        <a class="sidebar-head-3" href="../races/half-elf.html">Half-Elf</a>
-        <a class="sidebar-head-3" href="../races/half-orc.html">Half-Orc</a>
-        <a class="sidebar-head-3" href="../races/halfling.html">Halfling</a>
-        <a class="sidebar-head-3" href="../races/human.html">Human</a>
-        <a class="sidebar-head-3" href="../races/tiefling.html">Tiefling</a>
+  <aside>
+    <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../guide.html">Guide</a></li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../guide.html#race">Race</a></li>
+            <li><a href="../guide.html#class">Class</a></li>
+            <li><a href="../guide.html#background">Background</a></li>
+            <li><a href="../guide.html#ability-scores">Ability Scores</a></li>
+            <li><a href="../guide.html#assembly">Everything Else</a></li>
+          </ul>
+          <li>Resources</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li>Races</li>
+            <ul class="list-unstyled" style="margin-left: 1rem;">
+              <li><a href="../races/aasimar.html">Aasimar</a></li>
+              <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+              <li><a href="../races/dwarf.html">Dwarf</a></li>
+              <li><a href="../races/elf.html">Elf</a></li>
+              <li><a href="../races/genasi.html">Genasi</a></li>
+              <li><a href="../races/half-elf.html">Half-Elf</a></li>
+              <li><a href="../races/half-orc.html">Half-Orc</a></li>
+              <li><a href="../races/halfling.html">Halfling</a></li>
+              <li><a href="../races/human.html">Human</a></li>
+              <li><a href="../races/tielfing.html">Tiefling</a></li>
+            </ul>
+            <li>Classes</li>
+            <ul class="list-unstyled" style="margin-left: 1rem;">
+              <li><a href="artificer.html">Artificer</a></li>
+              <li><a href="barbarian.html">Barbarian</a></li>
+              <li><a href="bard.html">Bard</a></li>
+              <li><a href="cleric.html">Cleric</a></li>
+              <li><a href="druid.html">Druid</a></li>
+              <li><a href="fighter.html">Fighter</a></li>
+              <li><a href="monk.html">Monk</a></li>
+              <li><a href="paladin.html">Paladin</a></li>
+              <li><a href="ranger.html">Ranger</a></li>
+              <li><a href="rogue.html">Rogue</a></li>
+              <li><a href="sorcerer.html">Sorcerer</a></li>
+              <li><a href="warlock.html">Warlock</a></li>
+              <li><a href="wizard.html">Wizard</a></li>
+            </ul>
+          </ul>
+        </ul>
       </div>
-      <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
-      <div class="drop-div drop-classes">
-        <a class="sidebar-head-3" href="artificer.html">Artificer</a>
-        <a class="sidebar-head-3" href="barbarian.html">Barbarian</a>
-        <a class="sidebar-head-3" href="bard.html">Bard</a>
-        <a class="sidebar-head-3" href="cleric.html">Cleric</a>
-        <a class="sidebar-head-3" href="druid.html">Druid</a>
-        <a class="sidebar-head-3" href="fighter.html">Fighter</a>
-        <a class="sidebar-head-3" href="monk.html">Monk</a>
-        <a class="sidebar-head-3" href="paladin.html">Paladin</a>
-        <a class="sidebar-head-3" href="ranger.html">Ranger</a>
-        <a class="sidebar-head-3" href="rogue.html">Rogue</a>
-        <a class="sidebar-head-3" href="sorcerer.html">Sorcerer</a>
-        <a class="sidebar-head-3" href="warlock.html">Warlock</a>
-        <a class="sidebar-head-3" href="wizard.html">Wizard</a>
-      </div>
-    </div>
-  </nav>  
+    </nav>
+  </aside>
 
+  <main>
+    <h1>The Warlock</h1>
+    <p>
+      Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of
+      supernatural power, warlocks unlock magical effects both subtle and spectacular.
+    </p>
 
+    <table class="table table-striped class-table">
+      <thead>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+        <tr>
+          <th class="table-h2">Level</th>
+          <th class="table-h2">Prof. Bonus</th>
+          <th class="table-h2" style="width: auto;">Features</th>
+          <th class="table-h2">Cantrips Known</th>
+          <th class="table-h2">Spells Known</th>
+          <th class="table-h2">Spell Slots</th>
+          <th class="table-h2">Slot Level</th>
+          <th class="table-h2">Invocations Known</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>+2</td>
+          <td><a href="#otherworldly-patron">Otherworldly Patron</a>, <a href="#pact-magic">Pact Magic</a></td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1st</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>+2</td>
+          <td><a href="#eldritch-invocations">Eldritch Invocations</a></td>
+          <td>2</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1st</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>+2</td>
+          <td><a href="#pact-boon">Pact Boon</a></td>
+          <td>2</td>
+          <td>4</td>
+          <td>2</td>
+          <td>2nd</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>+2</td>
+          <td>Ability Score Increase</td>
+          <td>3</td>
+          <td>5</td>
+          <td>2</td>
+          <td>2nd</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>+3</td>
+          <td></td>
+          <td>3</td>
+          <td>6</td>
+          <td>2</td>
+          <td>3rd</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>+3</td>
+          <td>Otherworldly Patron feature</td>
+          <td>3</td>
+          <td>7</td>
+          <td>2</td>
+          <td>3rd</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>+3</td>
+          <td></td>
+          <td>3</td>
+          <td>8</td>
+          <td>2</td>
+          <td>4th</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>+3</td>
+          <td>Ability Score Increase</td>
+          <td>3</td>
+          <td>9</td>
+          <td>2</td>
+          <td>4th</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>+4</td>
+          <td></td>
+          <td>3</td>
+          <td>10</td>
+          <td>2</td>
+          <td>5th</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>+4</td>
+          <td>Otherworldly Patron feature</td>
+          <td>4</td>
+          <td>10</td>
+          <td>2</td>
+          <td>5th</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>+4</td>
+          <td><a href="#mystic-arcanum">Mystic Arcanum</a> (6th level)</td>
+          <td>4</td>
+          <td>11</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>+4</td>
+          <td>Ability Score Increase</td>
+          <td>4</td>
+          <td>11</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>+5</td>
+          <td><a href="#mystic-arcanum">Mystic Arcanum</a> (7th level)</td>
+          <td>4</td>
+          <td>12</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>+5</td>
+          <td>Otherworldly Patron feature</td>
+          <td>4</td>
+          <td>12</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>+5</td>
+          <td><a href="#mystic-arcanum">Mystic Arcanum</a> (8th level)</td>
+          <td>4</td>
+          <td>13</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>+5</td>
+          <td>Ability Score Increase</td>
+          <td>4</td>
+          <td>13</td>
+          <td>3</td>
+          <td>5th</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>+6</td>
+          <td><a href="#mystic-arcanum">Mystic Arcanum</a> (9th level)</td>
+          <td>4</td>
+          <td>14</td>
+          <td>4</td>
+          <td>5th</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>+6</td>
+          <td></td>
+          <td>4</td>
+          <td>14</td>
+          <td>4</td>
+          <td>5th</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>+6</td>
+          <td>Ability Score Increase</td>
+          <td>4</td>
+          <td>15</td>
+          <td>4</td>
+          <td>5th</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>+6</td>
+          <td><a href="#eldritch-master">Eldritch Master</a></td>
+          <td>4</td>
+          <td>15</td>
+          <td>4</td>
+          <td>5th</td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Class Features</h1>
+    <p>As a warlock, you gain the following class features.</p>
+
+    <h3>Hit Points</h3>
+    <p>
+      <strong>Hit Dice:</strong> 1d8 per warlock level<br>
+      <strong>Hit Points at 1st Level:</strong> 8 + your Consitution modifier<br>
+      <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Consitution modifier<br>
+    </p>
+    <h3>Proficiencies</h3>
+    <p>
+      <strong>Armor:</strong> Light armor<br>
+      <strong>Weapons:</strong> Simple weapons<br>
+      <strong>Tools:</strong> None<br>
+      <strong>Saving Throws:</strong>Wisdom, Charisma<br>
+      <strong>Skills:</strong> Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion
+    </p>
+    <h3>Equipment</h3>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+      <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+      <li>(a) a component pouch or (b) an arcane focus</li>
+      <li>(a) a scholar's pack or (b) a dungeoneer's pack</li>
+      <li>leather armor, any simple weapon, and two daggers</li>
+    </ul>
+
+    <h2 id="otherworldly-patron">Otherworldly Patron</h2>
+    <p>
+      At 1st level, you have struck a bargain with an otherworldly being of your choice. Choose <a href="#archfey">Archfey</a>,
+      <a href="#celestial">Celestial</a>, <a href="#fathomless">Fathomless</a>, <a href="#fiend">Fiend</a>, <a href="#genie">Genie</a>,
+      <a href="#great-old-one">Great Old One</a>, <a href="#hexblade">Hexblade</a>, <a href="#undead">Undead</a>, or
+      <a href="#undying">Undying</a>. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
+    </p>
+
+    <h2 id="pact-magic">Pact Magic</h2>
+    <p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>
+
+    <h3>Cantrips</h3>
+    <p>
+      You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as
+      shown in the Cantrips Known column of the Warlock table.
+    </p>
+
+    <h3>Spell Slots</h3>
+    <p>
+      The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the
+      level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must
+      expend a spell slot. You regain all expended spell slots when you finish a short or long rest.
+    </p>
+    <p>
+      For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those
+      slots, and you cast it as a 3rd-level spell.
+    </p>
+
+    <h3>Spells Known of 1st Level and Higher</h3>
+    <p>At 1st level, you know two 1st-level spells of your choice from the warlock spell list.</p>
+    <p>
+      The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level or higher. A spell you
+      choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for
+      example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
+    </p>
+    <p>
+      Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from
+      the warlock spell list, which also must be of a level for which you have spell slots.
+    </p>
+
+    <h3>Spellcasting Ability</h3>
+    <p>
+      Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting
+      ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack
+      roll with one.
+    </p>
+    <p><strong>Spell save DC =</strong> 8 + your proficiency bonus + your Charisma modifier</p>
+    <p><strong>Spell attack modifier =</strong> your proficiency bonus + your Charisma modifier</p>
+
+    <h3>Spellcasting Focus</h3>
+    <p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
+
+    <h2 id="eldritch-invocations">Eldritch Invocations</h2>
+    <p>
+      In your study of occult lore, you have unearthed <a href="eldritch-invocations.html">Eldritch Invocations</a>, fragments of forbidden
+      knowledge that imbue you with an abiding magical ability.
+    </p>
+    <p>
+      At 2nd level, you gain two eldritch invocations of your choice. When you gain certain warlock levels, you gain additional invocations of
+      your choice, as shown in the Invocations Known column of the Warlock table. A level prerequisite refers to your level in this class.
+    </p>
+    <p>
+      Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation
+      that you could learn at that level.
+    </p>
+
+    <h2>Pact Boon</h2>
+    <p>
+      At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.
+    </p>
+    <ul>
+      <li>
+        <strong>Pact of the Blade</strong>
+        <ul>
+          <li>
+            You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you
+            create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and
+            immunity to nonmagical attacks and damage.
+          </li>
+          <li>
+            Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature
+            again, if you dismiss the weapon (no action required), or if you die.
+          </li>
+          <li>
+            You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the
+            ritual over the course of 1 hour, which can be done during a short rest.
+          </li>
+          <li>
+            You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon
+            thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you
+            perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your
+            feet if it is in the extradimensional space when the bond breaks.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Pact of the Chain</strong>
+        <ul>
+          <li>You learn the find familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</li>
+          <li>
+            When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp,
+            pseudodragon, quasit, or sprite.
+          </li>
+          <li>
+            Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to use its reaction to
+            make one attack with its reaction.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Pact of the Tome</strong>
+        <ul>
+          <li>
+            Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell
+            list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don't
+            count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for
+            you.
+          </li>
+          <li>
+            If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be
+            performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Pact of the Talisman</strong>
+        <ul>
+          <li>
+            Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check,
+            they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your
+            proficiency bonus, and all expended uses are restored when you finish a long rest.
+          </li>
+          <li>
+            If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed
+            during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ability Score Improvement</h2>
+    <p>
+      When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can
+      increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+    </p>
+
+    <h2 id="mystic-arcanum">Mystic Arcanum</h2>
+    <p>
+      At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as
+      this arcanum.
+    </p>
+    <p>You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</p>
+    <p>
+      At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level
+      spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest.
+    </p>
+
+    <h2 id="eldritch-master">Eldritch Master</h2>
+    <p>
+      At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can
+      spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell
+      slots with this feature, you must finish a long rest before you can do so again.
+    </p>
+
+    <h1>Otherworldly Patrons</h1>
+
+    <h2 id="archfey">The Archfey</h2>
+    <p>
+      Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This
+      being's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling
+      of age-old grudges.
+    </p>
+
+    <h3>Expanded Spell List</h3>
+    <p>
+      The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock
+      spell list for you.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Spell Level</th>
+          <th>Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>Faerie Fire, Sleep</td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>Calm Emotions, Phantasmal Force</td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>Blink, Plant Growth</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>Dominate Beast, Greater Invisibility</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Dominate Person, Seeming</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Fey Presence</h3>
+    <p>
+      Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you
+      can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The
+      creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.
+    </p>
+    <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+
+    <h3>Misty Escape</h3>
+    <p>
+      Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn
+      invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until
+      you attack or cast a spell.
+    </p>
+    <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+
+    <h3>Beguiling Defenses</h3>
+    <p>
+      Beginning at 10th level, your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being
+      charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The
+      creature must succeed on a Wisdom saving throw against your warlock spell save DC or be charmed by you for 1 minute or until the creature
+      takes any damage.
+    </p>
+
+    <h3>Dark Delirium</h3>
+    <p>
+      Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of
+      you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your
+      choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature
+      takes any damage.
+    </p>
+    <p>
+      Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear
+      only itself, you, and the illusion.
+    </p>
+    <p>You must finish a short or long rest before you can use this feature again.</p>
+
+    <h2 id="celestial">The Celestial</h2>
+    <p>
+      Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, kirin, unicorn, or other entity
+      that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that
+      illuminates the multiverse.
+    </p>
+    <p>
+      Being connected to such power can cause changes to your behavior and beliefs. You might find yourself driven to annihilate the undead, to
+      defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron,
+      a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now and that your pact binds
+      you to bring light to the dark places of the world.
+    </p>
+
+    <h3>Expanded Spell List</h3>
+    <p>
+      The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock
+      spell list for you.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Spell Level</th>
+          <th>Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>Cure Wounds, Guiding Bolt</td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>Flaming Sphere, Lesser Restoration</td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>Daylight, Revivify</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>Guardian of Faith, Wall of Fire</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Flame Strike, Greater Restoration</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Bonus Cantrips</h3>
+    <p>
+      At 1st level, you learn the Light and Sacred Flame cantrips. They count as warlock cantrips for you, but they don't count against your
+      number of cantrips known.
+    </p>
+
+    <h3>Healing Light</h3>
+    <p>
+      At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing.
+      The number of dice in the pool equals 1 + your warlock level.
+    </p>
+    <p>
+      As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you
+      can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of
+      hit points equal to the total.
+    </p>
+    <p>Your pool regains all expended dice when you finish a long rest.</p>
+
+    <h3>Radiant Soul</h3>
+    <p>
+      Starting at 6th level, your link to the Celestial allows you to serve as a conduit for radiant energy. You have resistance to radiant damage,
+      and when you cast a spell that deals radiant or fire damage, you add your Charisma modifier to one radiant or fire damage roll of that spell
+      against one of its targets.
+    </p>
+
+    <h3>Celestial Resistance</h3>
+    <p>
+      Starting at 10th level, you gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your
+      warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each
+      gain temporary hit points equal to half your warlock level + your Charisma modifier.
+    </p>
+
+    <h3>Searing Vengeance</h3>
+    <p>
+      Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start
+      of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point
+      maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to
+      2d8 + your Charisma modifier, and is blinded until the end of the current turn.
+    </p>
+    <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+
+    <h2 id="fathomless">The Fathomless</h2>
+    <h2 id="fiend">The Fiend</h2>
+    <h2 id="genie">The Genie</h2>
+    <h2 id="great-old-one">The Great Old One</h2>
+    <h2 id="hexblade">The Hexblade</h2>
+    <h2 id="undead">The Undead</h2>
+    <h2 id="undying">The Undying</h2>
+  </main>
 </body>
-
 </html>

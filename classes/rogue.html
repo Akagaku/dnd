@@ -13,6 +13,8 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,49 +25,1002 @@
 </head>
 
 <body>
-  <nav class="sidebar" style="overflow-y: scroll;">
-    <a class="sidebar-head-1" href="../index.html">Home</a>
-    <a class="sidebar-head-1" href="../guide.html">Guide</a>
-      <a class="sidebar-head-2" href="../guide.html#race">Race</a>
-      <a class="sidebar-head-2" href="../guide.html#class">Class</a>
-      <a class="sidebar-head-2" href="../guide.html#background">Background</a>
-      <a class="sidebar-head-2" href="../guide.html#ability-scores">Ability Scores</a>
-      <a class="sidebar-head-2" href="../guide.html#assembly">Everything Else</a>
-    <a class="sidebar-head-1 drop-btn" id="resources">Resources</a>
-    <div class="drop-div drop-resources">
-      <a class="sidebar-head-2 drop-btn" id="races">Races</a>
-      <div class="drop-div drop-races">
-        <a class="sidebar-head-3" href="../races/aasimar.html">Aasimar</a>
-        <a class="sidebar-head-3" href="../races/dragonborn.html">Dragonborn</a>
-        <a class="sidebar-head-3" href="../races/dwarf.html">Dwarf</a>
-        <a class="sidebar-head-3" href="../races/elf.html">Elf</a>
-        <a class="sidebar-head-3" href="../races/genasi.html">Genasi</a>
-        <a class="sidebar-head-3" href="../races/half-elf.html">Half-Elf</a>
-        <a class="sidebar-head-3" href="../races/half-orc.html">Half-Orc</a>
-        <a class="sidebar-head-3" href="../races/halfling.html">Halfling</a>
-        <a class="sidebar-head-3" href="../races/human.html">Human</a>
-        <a class="sidebar-head-3" href="../races/tiefling.html">Tiefling</a>
-      </div>
-      <a class="sidebar-head-2 drop-btn" id="classes">Classes</a>
-      <div class="drop-div drop-classes">
-        <a class="sidebar-head-3" href="artificer.html">Artificer</a>
-        <a class="sidebar-head-3" href="barbarian.html">Barbarian</a>
-        <a class="sidebar-head-3" href="bard.html">Bard</a>
-        <a class="sidebar-head-3" href="cleric.html">Cleric</a>
-        <a class="sidebar-head-3" href="druid.html">Druid</a>
-        <a class="sidebar-head-3" href="fighter.html">Fighter</a>
-        <a class="sidebar-head-3" href="monk.html">Monk</a>
-        <a class="sidebar-head-3" href="paladin.html">Paladin</a>
-        <a class="sidebar-head-3" href="ranger.html">Ranger</a>
-        <a class="sidebar-head-3" href="rogue.html">Rogue</a>
-        <a class="sidebar-head-3" href="sorcerer.html">Sorcerer</a>
-        <a class="sidebar-head-3" href="warlock.html">Warlock</a>
-        <a class="sidebar-head-3" href="wizard.html">Wizard</a>
-      </div>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../guide.html#race">Race</a></li>
+          <li><a href="../guide.html#class">Class</a></li>
+          <li><a href="../guide.html#background">Background</a></li>
+          <li><a href="../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../races/elf.html">Elf</a></li>
+            <li><a href="../races/genasi.html">Genasi</a></li>
+            <li><a href="../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../races/halfling.html">Halfling</a></li>
+            <li><a href="../races/human.html">Human</a></li>
+            <li><a href="../races/tielfing.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="artificer.html">Artificer</a></li>
+            <li><a href="barbarian.html">Barbarian</a></li>
+            <li><a href="bard.html">Bard</a></li>
+            <li><a href="cleric.html">Cleric</a></li>
+            <li><a href="druid.html">Druid</a></li>
+            <li><a href="fighter.html">Fighter</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="paladin.html">Paladin</a></li>
+            <li><a href="ranger.html">Ranger</a></li>
+            <li><a href="rogue.html">Rogue</a></li>
+            <li><a href="sorcerer.html">Sorcerer</a></li>
+            <li><a href="warlock.html">Warlock</a></li>
+            <li><a href="wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
     </div>
-  </nav>  
+  </nav>
 
+  <main>
+    <h1>Rogue</h1>
+    <p>
+      Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the
+      solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring
+      party.
+    </p>
+    <p><em>You must have a Dexterity score of 13 or higher in order to multiclass in or out of this class.</em></p>
 
+    <table class="table table-striped class-table">
+      <thead>
+        <tr>
+          <th colspan="3"></th>
+        </tr>
+        <tr>
+          <th class="table-h2">Level</th>
+          <th class="table-h2">Prof. Bonus</th>
+          <th class="table-h2">Sneak Attack</th>
+          <th class="table-h2" style="width: auto;">Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td><a href="#expertise">Expertise</a>, <a href="#Sneak Attack">Sneak Attack</a>, <a href="#thieves-cant">Thieves' Cant</a></td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td><a href="#cunning-action">Cunning Action</a></td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>+2</td>
+          <td>2d6</td>
+          <td><a href="#roguish-archetype">Roguish Archetype</a></td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>+2</td>
+          <td>2d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>+3</td>
+          <td>3d6</td>
+          <td><a href="#uncanny-dodge">Uncanny Dodge</a></td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>+3</td>
+          <td>3d6</td>
+          <td><a href="#expertise">Expertise</a></td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>+3</td>
+          <td>4d6</td>
+          <td><a href="#evasion">Evasion</a></td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>+3</td>
+          <td>4d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>+4</td>
+          <td>5d6</td>
+          <td>Roguish archetype feature</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>+4</td>
+          <td>5d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>+4</td>
+          <td>6d6</td>
+          <td><a href="#reliable-talent">Reliable Talent</a></td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>+4</td>
+          <td>6d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>+5</td>
+          <td>7d6</td>
+          <td>Roguish archetype feature</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>+5</td>
+          <td>7d6</td>
+          <td><a href="#blindsense">Blindsense</a></td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>+5</td>
+          <td>8d6</td>
+          <td><a href="#slippery-mind">Slippery Mind</a></td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>+5</td>
+          <td>8d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>+6</td>
+          <td>9d6</td>
+          <td>Roguish archetype feature</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>+6</td>
+          <td>9d6</td>
+          <td><a href="#elusive">Elusive</a></td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>+6</td>
+          <td>10d6</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>+6</td>
+          <td>10d6</td>
+          <td><a href="#stroke-of-luck">Stroke of Luck</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Class Features</h1>
+    <p>As a rogue, you gain the following class features.</p>
+
+    <h3>Hit Points</h3>
+    <p>
+      <strong>Hit Dice:</strong> 1d8 per rogue level<br>
+      <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br>
+      <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier<br>
+    </p>
+    <h3>Proficiencies</h3>
+    <p>
+      <strong>Armor:</strong> Light armor<br>
+      <strong>Weapons:</strong> Simple weapons, hand crossbows, longswords, rapiers, shortswords<br>
+      <strong>Tools:</strong> Rhieves' tools<br>
+      <strong>Saving Throws:</strong> Dexterity, Intelligence<br>
+      <strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance,
+      Persuasion, Sleight of Hand, and Stealth
+    </p>
+    <h3>Equipment</h3>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+      <li>(a) a rapier or (b) a shortswordv</li>
+      <li>(a) a shortbow and quiver of 20 arrows or (b) a shortsword</li>
+      <li>(a) a burglar's pack, (b) dungeoneer's pack, or (c) an explorer's pack</li>
+      <li>leather armor, two daggers, and thieves' tools</li>
+    </ul>
+
+    <h2 id="expertise">Expertise</h2>
+    <p>
+      At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your
+      proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
+    </p>
+    <p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
+
+    <h2 id="sneak-attack">Sneak Attack</h2>
+    <p>
+      Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to
+      one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+    </p>
+    <p>
+      You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you
+      don't have disadvantage on the attack roll.
+    </p>
+    <p>The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</p>
+
+    <h2 id="thieves-cant">Thieves' Cant</h2>
+    <p>
+      During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in
+      seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to
+      convey such a message than it does to speak the same idea plainly.
+    </p>
+    <p>
+      In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or
+      the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for
+      thieves on the run.
+    </p>
+
+    <h2 id="cunning-action">Cunning Action</h2>
+    <p>
+      Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns
+      in combat. This action can be used only to take the Dash, Disengage, or Hide action.
+    </p>
+
+    <h2 id="roguish-archetype">Roguish Archetype</h2>
+    <p>
+      At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. Choose
+      <a href="#arcane-trickster">Arcane Trickster</a>, <a href="#assassin">Assassin</a>, <a href="#inquisitive">Inquisitive</a>,
+      <a href="#mastermind">Mastermind</a>, <a href="#phantom">Phantom</a>, <a href="#scout">Scout</a>, <a href="#soulknife">Soulknife</a>,
+      <a href="#swashbuckler">Swashbuckler</a>, or <a href="#thief">Thief</a>. Your archetype choice grants you features at 3rd level and then
+      again at 9th, 13th, and 17th level.
+    </p>
+
+    <h2>Ability Score Improvement</h2>
+    <p>
+      When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you
+      can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+    </p>
+
+    <h2 id="uncanny-dodge">Uncanny Dodge</h2>
+    <p>
+      Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage
+      against you.
+    </p>
+
+    <h2 id="evasion">Evasion</h2>
+    <p>
+      Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm
+      spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no
+      damage if you succeed on the saving throw, and only half damage if you fail.
+    </p>
+
+    <h2 id="reliable-talent">Reliable Talent</h2>
+    <p>
+      By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your
+      proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
+    </p>
+
+    <h2 id="blindsense">Blindsense</h2>
+    <p>
+      Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.
+    </p>
+
+    <h2 id="slippery-mind">Slippery Mind</h2>
+    <p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>
+
+    <h2 id="elusive">Elusive</h2>
+    <p>
+      Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you
+      while you aren't incapacitated.
+    </p>
+
+    <h2 id="stroke-of-luck">Stroke of Luck</h2>
+    <p>
+      At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss
+      into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.
+    </p>
+    <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+
+    <h1>Roguish Archetypes</h1>
+
+    <h2 id="arcane-trickster">Arcane Trickster</h2>
+    <p>
+      Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues
+      include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.
+    </p>
+    <table class="table table-striped class-table">
+      <thead>
+        <tr>
+          <th colspan="3">Arcane Trickster Spellcasting</th>
+          <th colspan="4">Spell Slots per Spell Level</th>
+        </tr>
+        <tr>
+          <th class="table-h2">Rogue Level</th>
+          <th class="table-h2">Cantrips Known</th>
+          <th class="table-h2">Spells Known</th>
+          <th class="table-h2">1st</th>
+          <th class="table-h2">2nd</th>
+          <th class="table-h2">3rd</th>
+          <th class="table-h2">4th</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Mage Hand + 2</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>Mage Hand + 2</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Mage Hand + 2</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>Mage Hand + 2</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Mage Hand + 2</td>
+          <td>5</td>
+          <td>4</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>Mage Hand + 2</td>
+          <td>6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Mage Hand + 2</td>
+          <td>6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>Mage Hand + 3</td>
+          <td>7</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>Mage Hand + 3</td>
+          <td>8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>Mage Hand + 3</td>
+          <td>8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>Mage Hand + 3</td>
+          <td>9</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>Mage Hand + 3</td>
+          <td>10</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>Mage Hand + 3</td>
+          <td>10</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>Mage Hand + 3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>Mage Hand + 3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>Mage Hand + 3</td>
+          <td>11</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>Mage Hand + 3</td>
+          <td>12</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>Mage Hand + 3</td>
+          <td>13</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Spellcasting</h3>
+    <p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells.</p>
+
+    <h4>Cantrips</h4>
+    <p>
+      You learn three cantrips: Mage Hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of
+      your choice at 10th level.
+    </p>
+
+    <h4>Spell Slots</h4>
+    <p>
+      The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one
+      of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+    </p>
+    <p>
+      For example, if you know the 1st-level spell Charm Person and have a 1st-level and a 2nd-level spell slot available, you can cast Charm
+      Person using either slot.
+    </p>
+
+    <h4>Spells Known of 1st Level and Higher</h4>
+    <p>
+      You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard
+      spell list.
+    </p>
+    <p>
+      The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of
+      these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance,
+      when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.
+    </p>
+    <p>The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+    <p>
+      Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard
+      spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you're
+      replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.
+    </p>
+
+    <h4>Spellcasting Ability</h4>
+    <p>
+      Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You
+      use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the
+      saving throw DC for a wizard spell you cast and when making an attack roll with one.
+    </p>
+    <p><strong>Spell save DC =</strong> 8 + your proficiency bonus + your Intelligence modifier</p>
+    <p><strong>Spell attack modifier =</strong> your proficiency bonus + your Intelligence modifier</p>
+
+    <h3>Mage Hand Legerdemain</h3>
+    <p>
+      Starting at 3rd level, when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks
+      with it:
+    </p>
+    <ul>
+      <li>You can stow one object the hand is holding in a container worn or carried by another creature.</li>
+      <li>You can retrieve an object in a container worn or carried by another creature.</li>
+      <li>You can use thieves' tools to pick locks and disarm traps at range.</li>
+      <li>
+        You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by
+        the creature's Wisdom (Perception) check.
+      </li>
+    </ul>
+    <p>In addition, you can use the bonus action granted by your Cunning Action to control the hand.</p>
+
+    <h3>Magical Ambush</h3>
+    <p>
+      Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it
+      makes against the spell this turn.
+    </p>
+
+    <h3>Versatile Trickster</h3>
+    <p>
+      At 13th level, you gain the ability to distract targets with your Mage Hand. As a bonus action on your turn, you can designate a creature
+      within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of
+      the turn.
+    </p>
+
+    <h3>Spell Thief</h3>
+    <p>At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.</p>
+    <p>
+      Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the
+      creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the
+      spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't
+      need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that
+      spell until the 8 hours have passed.
+    </p>
+    <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+
+    <h2 id="assassin">Assassin</h2>
+    <p>
+      You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters, and
+      even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your
+      foes with deadly efficiency.
+    </p>
+
+    <h3>Bonus Proficiencies</h3>
+    <p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.</p>
+
+    <h3>Assassinate</h3>
+    <p>
+      Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any
+      creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.
+    </p>
+
+    <h3>Infiltration Expertise</h3>
+    <p>
+      Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the
+      history, profession, and affiliations for an identity. You can't establish an identity that belongs to someone else. For example, you might
+      acquire appropriate clothing, letters of introduction, and official-looking certification to establish yourself as a member of a trading
+      house from a remote city so you can insinuate yourself into the company of other wealthy merchants.
+    </p>
+    <p>
+      Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to.
+    </p>
+
+    <h3>Impostor</h3>
+    <p>
+      At 13th level, you gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours
+      studying these three components of the person's behavior, listening to speech, examining handwriting, and observing mannerisms.
+    </p>
+    <p>
+      Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma
+      (Deception) check you make to avoid detection.
+    </p>
+
+    <h3>Death Strike</h3>
+    <p>
+      Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is surprised, it must make a
+      Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack
+      against the creature.
+    </p>
+
+    <h2 id="inquisitive">Inquisitive</h2>
+    <p>
+      As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on
+      your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures
+      that hide among and prey upon ordinary folk, and your mastery of lore and your sharp eye make you well equipped to expose and end hidden
+      evils.
+    </p>
+
+    <h3>Ear for Deceit</h3>
+    <p>
+      When you choose this archetype at 3rd level, you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to
+      determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8.
+    </p>
+    
+    <h3>Eye for Detail</h3>
+    <p>
+      Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an
+      Intelligence (Investigation) check to uncover or decipher clues.
+    </p>
+    
+    <h3>Insightful Fighting</h3>
+    <p>
+      At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you make a Wisdom
+      (Insight) check against a creature you can see that isn't incapacitated, contested by the target's Charisma (Deception) check. If you
+      succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
+      disadvantage on it.
+    </p>
+    <p>This benefit lasts for 1 minute or until you successfully use this feature against a different target.</p>
+    
+    <h3>Steady Eye</h3>
+    <p>
+      At 9th level, you gain advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed
+      on the same turn.
+    </p>
+    
+    <h3>Unerring Eye</h3>
+    <p>
+      At 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their
+      original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren't blinded or deafened. You sense that
+      an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.
+    </p>
+    <p>
+      You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you
+      finish a long rest.
+    </p>
+    
+    <h3>Eye for Weakness</h3>
+    <p>
+      At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting
+      feature applies to a creature, your Sneak Attack damage against that creature increases by 3d6.
+    </p>
+
+    <h2 id="mastermind">Mastermind</h2>
+    <p>
+      Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives
+      of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.
+    </p>
+
+    <h3>Master of Intrigue</h3>
+    <p>
+      When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice.
+      You also learn two languages of your choice.
+    </p>
+    <p>
+      Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you
+      to pass yourself off as a native speaker of a particular land, provided that you know the language.
+    </p>
+    
+    <h3>Master of Tactics</h3>
+    <p>
+      Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking
+      a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you.
+    </p>
+    
+    <h3>Insightful Manipulator</h3>
+    <p>
+      Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain
+      information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to
+      two of the following characteristics of your choice:
+    </p>
+    <ul>
+      <li>Intelligence score</li>
+      <li>Wisdom score</li>
+      <li>Charisma score</li>
+      <li>Class levels (if any)</li>
+    </ul>
+    <p>At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.</p>
+    
+    <h3>Misdirection</h3>
+    <p>
+      Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack
+      while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that
+      creature instead of you.
+    </p>
+    
+    <h3>Soul of Deceit</h3>
+    <p>
+      Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by
+      making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
+    </p>
+    <p>
+      Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so
+      choose, and you can't be compelled to tell the truth by magic.
+    </p>
+
+    <h2 id="phantom">Phantom</h2>
+    <p>
+      Many rogues walk a fine line between life and death, risking their own lives and taking the lives of others. While adventuring on that line,
+      some rogues discover a mystical connection to death itself. These rogues take knowledge from the dead and become immersed in negative
+      energy, eventually becoming like ghosts. Thieves' guilds value them as highly effective information gatherers and spies.
+    </p>
+    <p>
+      How did you discover this grim power? Did you sleep in a graveyard and awaken to your new abilities? Or did you cultivate them in a temple
+      or thieves' guild dedicated to a deity of death?
+    </p>
+
+    <h3>Whispers of the Dead</h3>
+    <p>
+      When you choose this archetype at 3rd level, echoes of those who have died cling to you. Whenever you finish a short or long rest, you can
+      gain one skill or tool proficiency of your choice, as a ghostly presence shares its knowledge with you. You lose this proficiency when you
+      use this feature to choose a different proficiency that you lack.
+    </p>
+
+    <h3>Wails from the Grave</h3>
+    <p>
+      At 3rd level, as you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after
+      you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first
+      creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the
+      roll's total, as wails of the dead sound around them for a moment.
+    </p>
+    <p>
+      You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    </p>
+
+    <h3>Tokens of the Departed</h3>
+    <p>
+      At 9th level, when a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that
+      takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny
+      trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the Trinkets table in the Player's Handbook
+      to generate it.
+    </p>
+    <p>You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.</p>
+    <p>You can use soul trinkets in the following ways:</p>
+    <ul>
+      <li>
+        While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is
+        enhanced by the life essence within the object.
+      </li>
+      <li>
+        When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that's on your person and then immediately use
+        Wails from the Grave, without expending a use of that feature.
+      </li>
+      <li>
+        As an action, you can destroy one of your soul trinkets, no matter where it's located. When you do so, you can ask the spirit associated
+        with the trinket one question. The spirit appears to you and answers in a language it knew in life. It's under no obligation to be
+        truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM.
+      </li>
+    </ul>
+
+    <h3>Ghost Walk</h3>
+    <p>
+      At 13th level, you can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form.
+      While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move
+      through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or
+      an object.
+    </p>
+    <p>
+      You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or
+      destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk.
+    </p>
+
+    <h3>Death Knell</h3>
+    <p>At 17th level, your association with death has become so close that you gain the following benefits:</p>
+    <ul>
+      <li>When you use your Wails from the Grave, you can now deal the necrotic damage to both the first and the second creature.</li>
+      <li>
+        At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn
+        to you.
+      </li>
+    </ul>
+
+    <h2 id="scout">Scout</h2>
+
+    <h2 id="soulknife">Soulknife</h2>
+    <p>
+      Most assassins strike with physical weapons, and many burglars and spies use thieves' tools to infiltrate secure locations. In contrast, a
+      Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power
+      within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often
+      mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to
+      employ a Soulknife as a spy.
+    </p>
+    <p>
+      As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced
+      the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your
+      power.
+    </p>
+
+    <h3>Psionic Power</h3>
+    <p>
+      Starting at 3rd level, you harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice,
+      which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have,
+      which are detailed below.
+    </p>
+    <p>
+      Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires
+      you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition,
+      as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.
+    </p>
+    <p>
+      When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th
+      level (d12).
+    </p>
+    <p>The powers below use your Psionic Energy dice.</p>
+    <p>
+      <strong><em>Psi-Bolstered Knack.</em></strong> When your nonpsionic training fails you, your psionic power can help: if you fail an ability
+      check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check,
+      potentially turning failure into success. You expend the die only if the roll succeeds.
+    </p>
+    <p>
+      <strong><em>Psychic Whispers.</em></strong> You can establish telepathic communication between yourself and others — perfect for quiet
+      infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then
+      roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and
+      you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile
+      of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any
+      time (no action required). You and the creature don't need to speak a common language to understand each other.
+    </p>
+    <p>
+      The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you
+      expend the die.
+    </p>
+
+    <h3>Psychic Blades</h3>
+    <p>
+      Also at 3rd level, You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can
+      manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse
+      and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the
+      ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on
+      its target if it deals damage.
+    </p>
+    <p>
+      After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same
+      turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+    </p>
+
+    <h3>Soul Blades</h3>
+    <p>
+      Starting at 9th level, your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic
+      Energy dice:
+    </p>
+    <p>
+      <strong><em>Homing Strikes.</em></strong> If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic
+      Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.
+    </p>
+    <p>
+      <strong><em>Psychic Teleportation.</em></strong> As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die
+      and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You
+      then teleport to that space, and the blade vanishes.
+    </p>
+
+    <h3>Psychic Veil</h3>
+    <p>
+      At 13th level, you can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with
+      anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early
+      immediately after you deal damage to a creature, or you force a creature to make a saving throw.
+    </p>
+    <p>
+      Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature
+      again.
+    </p>
+
+    <h3>Rend Mind</h3>
+    <p>
+      When you reach 17th level, you can sweep your Psychic Blade directly through a creature's mind. When you use your Psychic Blades to deal
+      Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your
+      Dexterity modifier). If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of
+      each of its turns, ending the effect on itself on a success.
+    </p>
+    <p>
+      Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again.
+    </p>
+
+    <h2 id="swashbuckler">Swashbuckler</h2>
+    <p>
+      You focus your training on the art of the blade, relying on speed, elegance, and charm in equal parts. While some warriors are brutes clad
+      in heavy armor, your method of fighting looks almost like a performance. Duelists and pirates typically belong to this archetype.
+    </p>
+    <p>A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.</p>
+
+    <h3>Fancy Footwork</h3>
+    <p>
+      When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you
+      make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.
+    </p>
+
+    <h3>Rakish Audacity</h3>
+    <p>
+      Starting at 3rd level, your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your
+      Charisma modifier.
+    </p>
+    <p>
+      You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your Sneak Attack against a
+      creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll.
+      All the other rules for Sneak Attack still apply to you.
+    </p>
+
+    <h3>Panache</h3>
+    <p>
+      At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a
+      creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.
+    </p>
+    <p>
+      If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't
+      make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or
+      affects it with a spell, or until you and the target are more than 60 feet apart.
+    </p>
+    <p>
+      If you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a
+      friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.
+    </p>
+
+    <h3>Elegant Maneuver</h3>
+    <p>
+      Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics)
+      check you make during the same turn.
+    </p>
+
+    <h3>Master Duelist</h3>
+    <p>
+      Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can
+      roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest.
+    </p>
+
+    <h2 id="thief">Thief</h2>
+    <p>
+      You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do
+      rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving
+      your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you
+      normally couldn't employ.
+    </p>
+
+    <h3>Fast Hands</h3>
+    <p>
+      Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your
+      thieves' tools to disarm a trap or open a lock, or take the Use an Object action.
+    </p>
+
+    <h3>Second-Story Work</h3>
+    <p>
+      When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.
+    </p>
+    <p>In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
+
+    <h3>Supreme Sneak</h3>
+    <p>Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</p>
+
+    <h3>Use Magic Device</h3>
+    <p>
+      By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended
+      for you. You ignore all class, race, and level requirements on the use of magic items.
+    </p>
+
+    <h3>Thief's Reflexes</h3>
+    <p>
+      When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first
+      round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use
+      this feature when you are surprised.
+    </p>
+  </main>
 </body>
-
 </html>
