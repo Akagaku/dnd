@@ -80,8 +80,8 @@
 
   <main>
     <section id="intro">
-      <h1>Character Creation Guide</h1>
       <img src="img/pencil.png" class="pencil-img">
+      <h1>Character Creation Guide</h1>
       <p>
         In this section, you will find a treasure trove of instructions to aid you in the creation of a Dungeons and Dragons character, including
         a full guide to filling out your character sheet. You're going to be joining me along the journey of character creation while I bring life
@@ -347,11 +347,6 @@
     </section>
 
     <section id="ability-scores">
-      <h1>Ability Scores</h1>
-      <p>
-        Now this is the fun part. Well, the class was the fun part. But this one is still good, I think. This is where you'll really define your
-        character, mechanically. Pretty much every time you roll dice, you're gonna be consulting these and adding them to your roll.
-      </p>
       <table class="table table-striped ability-table">
         <thead>
           <tr>
@@ -386,6 +381,11 @@
           </tr>
         </tbody>
       </table>
+      <h1>Ability Scores</h1>
+      <p>
+        Now this is the fun part. Well, the class was the fun part. But this one is still good, I think. This is where you'll really define your
+        character, mechanically. Pretty much every time you roll dice, you're gonna be consulting these and adding them to your roll.
+      </p>
       <p>
         Even without knowing a character's race, class, or background, these six values paint a fairly vivid picture. You can just <em>tell</em>
         what a character with high Intelligence and low Constitution might look like, without reading a description. Likewise, a character with
@@ -448,241 +448,269 @@
       <p>
         Now, I may have fibbed a little right out the gate. You're not going to consult your ability scores every time you roll dice. In fact, the
         only time you'll ever use them is when you want to know how much weight you can pull, how far you can jump, and how long you can hold your
-        breath. At the end of the day, they're just holdovers from the ancient days of Dungeons and Dragons. Relics of another age.
+        breath.
+      </p>
+      <p>
+        At the end of the day, these numbers are just holdovers from the ancient days of Dungeons and Dragons. Relics of another age. If they threw
+        those relics out, a bunch of people would whine and cry about it (myself included), so they keep them.
       </p>
       <p>
         What you <em>really</em> need to know are your <strong>ability score modifiers</strong>. Each of your ability scores will have a different
-        modifier depending on its value, and <em>these</em> are the numbers you'll actually use in the game.
+        modifier depending on its value. Higher score? Higher modifier. Lower score? Lower modifier. If your score is really low, your modifier
+        can even be negative. <em>These</em> are the numbers you'll actually use in the game, and they're pretty simple. You just add the modifier
+        to your die rolls (along with some other stuff like proficiency bonus).
       </p>
       <p>
         Unfortunately, this is the last thing that everyone agrees on, because there are just about a million ways to actually determine your
-        ability scores, and there isn't a consensus on which one is right. So I'm just gonna go through all of them.
+        ability scores, and there doesn't seem to be a consensus on which one is right. You could argue that none of them are really right. So
+        I'm just gonna go through all of them.
       </p>
-        <h2>The Classic</h2>
-        <p>
-          The first choice presented in the Player's Handbook is the 4d6 method, more commonly known as the "4d6, drop the lowest" method. It's
-          also probably the most popular of them all. You roll four six-sided dice (or roll the same six-sided die four times, for the
-          impoverished), and add up the highest three results. That's one of your ability scores. Repeat five times, and you're done.
-        </p>
-        <p>
-          This is a modern, more lenient interpretation of the original stat-generation method, which we'll discuss later. It's random, so still
-          influenced by the dice, but also controlled, so you don't feel like your entire build is up to chance. 
-        </p>
-        <h2>The Standard</h2>
-        <p>
-          This is a solution for the impatient player. Instead of rolling for your ability scores, you just use what is known as the "standard
-          array." You get a lineup of 8/10/12/13/14/15, and you can place any one of those numbers in any ability score of your choice. You have
-          to use each number once.
-        </p>
-        <p>
-          Not only is this the quickest method, but it also provides a balanced experience. Right off the bat, you have two +2 and two +1
-          abilities, but you also have a 0 and a -1. You're good at a few things, and not so good at a couple other things. So, without ever
-          rolling a single die, your characters strengths and flaws are all sorted out.
-        </p>
-        <h2>The Calculator</h2>
-        <table class="table table-striped point-buy-table">
-          <thead>
-            <tr>
-              <th>Point Cost</th>
-              <th>Ability Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>-2</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>-1</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>0</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>9</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>11</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>12</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>13</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>14</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>15</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          The standard array may seem like a very safe, corporate stat-generation method, but in reality, it was born amidst the primordial soup
-          that is the <strong>point buy method</strong>. Rather than choosing ability scores from a pre-arranged list, you are instead given 27
-          "points" with which to purchase the scores that you want.
-        </p>
-        <p>
-          A single ability score of 8 costs 0 points. Increasing your scores above 8 costs points, while decreasing them below 8 refunds points.
-          The goal of this method is to get the scores you want without your point total going over 27. It so happens that the standard array from
-          the last section costs <em>exactly</em> 27 points.
-        </p>
-        <h2>The Fuck You</h2>
-        <p>
-          If you thought the 4d6 method was scary, you ain't seen nothing yet. <em>This</em> is how Gary Gygax and his friends determined their
-          ability scores way back in the bygone age of 1974, and it isn't exactly what you might call "balanced" or "good." But it is interesting,
-          and at the end of the day, that's all we can ask for.
-        </p>
-        <p>
-          Instead of rolling four dice and dropping the lowest result, you roll <strong>three</strong> dice. 3d6 per ability score. No
-          subtraction, only addition. All six of your scores are completely random, and can be anything from 3 to 18, with absolutely zero
-          moderation. What's that? You want to reroll? You have a -4 in every stat? Fuck you.
-        </p>
-        <p>
-          For fun, I'll use this method for Shlorbak. Based on my die rolls, he has an array of 5/18/6/3/3/3. Not exactly stellar by any stretch
-          of the imagination. But don't forget your racial ability score bonuses! As we discussed way back in the <a href="#race">Race</a>
-          section, Shlorbak has +1 Intelligence for a total of 4, and +2 Dexterity for a total of 20. So his final lineup is 5/20/6/4/3/3. Looking
-          like a good, balanced build. Though, this means he doesn't exactly have 11 hit points like we thought. He actually has 8.
-        </p>
+      <h2>The Classic</h2>
+      <p>
+        The first choice presented in the Player's Handbook is the 4d6 method, more commonly known as the "4d6, drop the lowest" method. It's
+        also probably the most popular of them all. You roll four six-sided dice (or roll the same six-sided die four times, for the
+        impoverished), and add up the highest three results. That's one of your ability scores. Repeat five times, and you're done.
+      </p>
+      <p>
+        This is a modern, more lenient interpretation of the original stat-generation method, which we'll discuss later. It's random, so still
+        influenced by the dice, but also controlled, so you don't feel like your entire build is up to chance. 
+      </p>
+      <h2>The Standard</h2>
+      <p>
+        This is a solution for the impatient player. Instead of rolling for your ability scores, you just use what is known as the "standard
+        array." You get a lineup of 8/10/12/13/14/15, and you can place any one of those numbers in any ability score of your choice. You have
+        to use each number once.
+      </p>
+      <p>
+        Not only is this the quickest method, but it also provides a balanced experience. Right off the bat, you have two +2 and two +1
+        abilities, but you also have a 0 and a -1. You're good at a few things, and not so good at a couple other things. So, without ever
+        rolling a single die, your characters strengths and flaws are all sorted out.
+      </p>
+      <h2>The Calculator</h2>
+      <table class="table table-striped point-buy-table">
+        <thead>
+          <tr>
+            <th>Point Cost</th>
+            <th>Ability Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-2</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>-1</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>15</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The standard array may seem like a very safe, corporate stat-generation method that requires no book keeping and no mental activity,
+        but in reality, it was born amidst the primordial soup that is the <strong>point buy method</strong>.
+      </p>
+      <p>
+        This is a popular choice for Dungeon Masters who value absolute player freedom, and is typically for more experienced players. Rather
+        than choosing ability scores from a pre-arranged list, you are instead given 27 "points" with which to purchase the scores that you
+        want.
+      </p>
+      <p>
+        A single ability score of 8 costs 0 points. Increasing your scores above 8 costs points, while decreasing them below 8 refunds points.
+        Usually, you can't go <em>above</em> 15 or <em>below</em> 6, although things like racial bonuses ignore these limits.
+      </p>
+      <p>
+        The goal of this method is to get the scores you want without your point total going over 27. It so happens that the standard array from
+        the last section costs <em>exactly</em> 27 points.
+      </p>
+      <h2>The Fuck You</h2>
+      <p>
+        If you thought the 4d6 method was scary, you ain't seen nothing yet. <em>This</em> is how Gary Gygax and his friends determined their
+        ability scores way back in the bygone age of 1974, and it isn't exactly what you might call "balanced" or "good." But it is interesting,
+        and at the end of the day, that's all we can ask for.
+      </p>
+      <p>
+        Instead of rolling four dice and dropping the lowest result, you roll <strong>three</strong> dice. 3d6 per ability score. (Actually, the
+        DM would roll them for you.) No subtraction, only addition. All six of your scores are completely random, and can be anything from 3 to
+        18, with absolutely zero moderation. What's that? You want to reroll? You have a -4 in every stat? Fuck you.
+      </p>
+      <p>
+        For fun, I'll use this method for Shlorbak. Based on my die rolls, he has an array of 5/18/6/3/3/3. Not exactly stellar by any stretch
+        of the imagination. But don't forget your racial ability score bonuses! As we discussed way back in the <a href="#race">Race</a>
+        section, Shlorbak has +1 Intelligence for a total of 4, and +2 Dexterity for a total of 20. So his final lineup is 5/20/6/4/3/3. Looking
+        like a good, balanced build. Though, this means he doesn't exactly have 11 hit points like we thought. He actually has 8.
+      </p>
     </section>
 
     <section id="assembly">
-      <h1>Putting It All Together</h1>
       <img src="img/progress.jpg" alt="character sheet progress" class="progress-img">
+      <h1>Putting It All Together</h1>
       <p>
         At this point, we're mostly done with your character. We've already finished all the sections on the character sheet marked in blue.
         Those marked in red are for use in-game, and we won't be going over them. That leaves only a few boxes for us to fill.
       </p>
 
-        <h2 style="width: 390px;">Inspiration</h2>
-        <p>
-          The box located above the ability scores and saving throws section is for "Inspiration." Inspiration is a metagame mechanic used by
-          dungeon masters to reward players. Essentially, the DM can give you Inspiration for good roleplaying. While you have it, you can spend
-          it to gain advantage on a roll.
-        </p>
+      <h2 style="width: 750px;">Inspiration</h2>
+      <p>
+        The box located above the ability scores and saving throws section is for "Inspiration." Inspiration is a metagame mechanic used by
+        dungeon masters to reward players. Essentially, the DM can give you Inspiration for good roleplaying. While you have it, you can spend
+        it to gain advantage on a roll.
+      </p>
 
-        <h2>Passive Perception</h2>
-        <p>
-          Let's move on to the lower left box, labeled "Passive Perception." What does that mean? Well, as you may have guessed, it's related to
-          the Perception skill. Imagine for a second, you're tracking cautiously through a dark, mossy hall in an ancient ruin. The droning noises
-          of dripping water and creaking stone assault you at all angles, from just outside the feeble range of your torchlight, setting your
-          teeth on edge.
-        </p>
-        <p>
-          You spend as much time looking over your shoulder as where you're going, only to be reminded every time that you can't see more than
-          twenty feet away from you. Your mind is restless imagining what manner of horrid, twisted creature lurks beyond the seemingly
-          impenetrable yet ever-encroaching wall of darkness, just beyond your warm circle of protection, and what will happen when the torch's
-          light inevitably fades.
-        </p>
-        <p>
-          All of a sudden, you hear a noise. It's the DM saying, "Make a Perception check." You roll: 4. "Well, uh, you don't see anything. Carry
-          on." That certainly shifted the mood. Instead of being immersed in the atmosphere of the dungeon and worried about its dangers, now
-          you're just worried about when your DM is going to backstab you. You want to make another Perception check, but you know that would be
-          metagaming.
-        </p>
-        <p>
-          But what if there were a number the dungeon master could use to simulate the average result of a Perception check, without having to ask
-          you to roll one? That would solve our little problem, wouldn't it? Well, luckily for us all, the game designers thought of this. Enter
-          Passive Perception: a number that does exactly that thing I just described.
-        </p>
-        <p>
-          To find out your Passive Perception, just add 10 to your Perception bonus, which means 10 + your Wisdom modifier + your
-          Proficiency Bonus (if you're proficient in Perception).
-        </p>
+      <h2>Passive Perception</h2>
+      <p>
+        Let's move on to the lower left box, labeled "Passive Perception." What does that mean? Well, as you may have guessed, it's related to
+        the Perception skill. Imagine for a second, you're tracking cautiously through a dark, mossy hall in an ancient ruin. The droning noises
+        of dripping water and creaking stone assault you at all angles, from just outside the feeble range of your torchlight, setting your
+        teeth on edge.
+      </p>
+      <p>
+        You spend as much time looking over your shoulder as where you're going, only to be reminded every time that you can't see more than
+        twenty feet away from you. Your mind is restless imagining what manner of horrid, twisted creature lurks beyond the seemingly
+        impenetrable yet ever-encroaching wall of darkness, just beyond your warm circle of protection, and what will happen when the torch's
+        light inevitably fades.
+      </p>
+      <p>
+        All of a sudden, you hear a noise. It's the DM saying, "Make a Perception check." You roll: 4. "Well, uh, you don't see anything. Carry
+        on." That certainly shifted the mood. Instead of being immersed in the atmosphere of the dungeon and worried about its dangers, now
+        you're just worried about when your DM is going to backstab you. You want to make another Perception check, but you know that would be
+        metagaming.
+      </p>
+      <p>
+        But what if there were a number the dungeon master could use to simulate the average result of a Perception check, without having to ask
+        you to roll one? That would solve our little problem, wouldn't it? Well, luckily for us all, the game designers thought of this. Enter
+        Passive Perception: a number that does exactly that thing I just described.
+      </p>
+      <p>
+        To find out your Passive Perception, just add 10 to your Perception bonus, which means 10 + your Wisdom modifier + your
+        Proficiency Bonus (if you're proficient in Perception).
+      </p>
 
-        <h2>Initiative</h2>
-        <p>
-          This is a simple one. Initiative lives between armor class and speed on your character sheet. Basically, your initiative bonus is your
-          Dexterity modifier. Unless you have some feature or effect that changes it. When you get in a fight, your DM will say, "Roll for
-          initiative," which means roll a d20 and add this number. That's it, really.
-        </p>
+      <h2>Initiative</h2>
+      <p>
+        This is a simple one. Initiative lives between armor class and speed on your character sheet. Basically, your initiative bonus is your
+        Dexterity modifier. Unless you have some feature or effect that changes it. When you get in a fight, your DM will say, "Roll for
+        initiative," which means roll a d20 and add this number. That's it, really.
+      </p>
 
-        <h2>The One You Already Know</h2>
-        <img src="img/chart.jpg" alt="alignment chart" class="chart-img">
-        <p>
-          A rule that needs no introduction, this is probably the most popular game mechanic ever invented. It's kind of taken on a life of its
-          own, to the extent that just about everyone has seen the chart on the left. The funny thing is most of them don't even know that it
-          comes from Dungeons and Dragons. Such is the nature of this wild and wacky underwater cable network we all love so much.
-        </p>
-        <p>
-          In case you don't know how the chart actually works, and have just been playing along and pretending so that you can fit in (also the
-          nature of the internet), I'm here to help. As you can see, the chart has two axes: Good-Evil, and Law-Chaos. Back in the elder days, the
-          first one didn't exist, but now it does.
-        </p>
-        <p>
-          Let's get into character for a second. Take all the time you need to center yourself. Deep breath. Remember your motivation. Ready? No?
-          We're gonna keep going anyway. Do you want to do the right thing, even at risk to yourself? If you answered "yes," you're Good. If you
-          answered "no" or "it depends," here's another question. Are you okay with hurting people for your own personal gain or gratification? If
-          you answered "yes" this time, you're Evil. Otherwise, you're Neutral.
-        </p>
-        <p>
-          Next axis. Do you believe in the virtue of order? Is the world better for the rules that govern it? Do you have rules that govern you?
-          Think about it for a second. And let's forget about any specific real law or government, just thinking generally here. Broad strokes. If
-          you answered "yes," you're Lawful. If not, follow-up question: would the world be better if it <em>weren't</em> governed by law? Would
-          <em>your</em> life specifically be better if it weren't burdened with rules and order? If "yes," you're Chaotic. Otherwise, Neutral. All
-          done!
-        </p>
-        <p>
-          There are a few problems with alignment. Some people believe a Neutral Neutral (or "True" Neutral) character can't really exist, some
-          people disagree on the meaning of Good and Evil, and some people don't really understand Law vs. Chaos. But I'm gonna let you in on a
-          litte trade secret. None of it really matters, since alignment has no mechanical consequences whatsoever. Instead of coming up with an
-          alignment and then trying to fit into it, just pick whatever you think best represents your character based on their actions. It's more
-          of a label than a rule. So really this whole section is pointless.
-        </p>
-        <p>
-          If you want a more in-depth explanation of the intricacies of alignment and why it's meaningless, I recommend you check out
-          <a href="https://www.youtube.com/watch?v=DgPhiLBW7jo">this video</a>.
-        </p>
+      <h2>The One You Already Know</h2>
+      <img src="img/chart.jpg" alt="alignment chart" class="chart-img">
+      <p>
+        A rule that needs no introduction, this is the most popular game mechanic ever invented. It's taken on a life of its own, to the extent
+        that everyone has seen the chart on the left, but most of them don't even know that it comes from Dungeons and Dragons. Such is the
+        nature of this wild and wacky underwater cable network we all love so much.
+      </p>
+      <p>
+        In case you don't know how the chart actually works, and have just been playing along and pretending so that you can fit in (also the
+        nature of the internet), I'm here to help. As you can see, the chart has two axes: Good-Evil, and Law-Chaos. Back in the elder days, the
+        first one didn't exist, but now it does.
+      </p>
+      <p>
+        Let's get into character for a second. Take all the time you need to center yourself. Deep breath. Remember your motivation. Ready? Okay.
+        Do you want to do the right thing, even at risk to yourself? If you answered "yes," you're Good. If you answered "no" or "it depends,"
+        here's another question. Are you okay with hurting people for your own personal gain or gratification? If you answered "yes" this time,
+        you're Evil. Otherwise, you're Neutral.
+      </p>
+      <p>
+        Next axis. Is the world better for the rules that govern it? Do you have rules that govern you? Think about it for a second. And let's
+        forget about any specific real law or government, just thinking generally here. Broad strokes. If you answered "yes," you're Lawful. If
+        not, follow-up question: would the world be better if it <em>weren't</em> governed by law? Would <em>your</em> life specifically be better
+        if it weren't burdened with rules and order? If "yes," you're Chaotic. Otherwise, Neutral. All done!
+      </p>
+      <p>
+        There are a few problems with alignment. Some people believe a Neutral Neutral (or "True" Neutral) character can't really exist, some
+        people disagree on the meaning of Good and Evil, and some people don't really understand Law vs. Chaos. But I'm gonna let you in on a
+        litte trade secret. None of it really matters. Alignment has no mechanical consequences whatsoever.
+      </p>
+      <p>
+        If you want a more in-depth explanation of alignment and why it's meaningless, I recommend you check out
+        <a href="https://www.youtube.com/watch?v=DgPhiLBW7jo">this video</a>.
+      </p>
 
-        <h2>Personality</h2>
-        <p>
-          The last thing on your character sheet (beside "Player Name," which I hope you can fill in without my help) is the series of four boxes
-          in the upper right. As you can tell from the labels, they're meant to provide a snapshot of your character's personality like a roleplay
-          cheat sheet. But I think it's pretty reductive, and can't possible capture the potential complexity of an actual character.
-        </p>
-        <p>
-          First up is <strong>personality traits</strong>. According to the rules, you're supposed to have two, but I'd encourage you to come up
-          with as many as possible. These are mannerisms, quirks, and other little things that add up to who you are. Essentially, anything that
-          doesn't fall into the other three categories.
-        </p>
-        <p>
-          Next is your <strong>ideal</strong>. You only need one of these. In essence, it's a way of thinking or a code that you live by. A
-          personal belief that drives you, like, "Treat others how you want to be treated," or, "Honesty is the best policy." What principles
-          drive your character?
-        </p>
-        <p>
-          Then there's the <strong>bond</strong>. This is like a goal, or a conviction. Something you strive to attain, something you want to
-          protect, something you need to destroy. It could be anything from a beloved daughter or little sister, to avenging a dead companion, to
-          stolen property you intend to retreive, to a debt you intend to repay.
-        </p>
-        <p>
-          Finally, the <strong>flaw</strong>. This one is self-explanatory. Just something <em>wrong</em> with your character. Like trust issues
-          or compulsive lying or Tourettes. Don't actually do that one though.
-        </p>
-        <p>
-          All said and done, I still find these stupid. The fact that they have their own dedicated text fields makes it feel like they're being
-          assigned the same level of importance as something like class features. But the way you display your character's personality doesn't
-          need to be so formulaic. Every character has these things by definition, but they're not as important in some as in others. The flaw
-          comes to mind as something that doesn't necessarily need to take center stage all the time.
-        </p>
-        <p>
-          My advice is to always remember three things about your character every time you say or do something in-character: what are your values,
-          what are your mannerisms, and what are your goals? These three things will make for a consistent and believable performance every time,
-          and build a unique image of who your character is.
-        </p>
+      <h2>Personality</h2>
+      <p>
+        The last thing on your character sheet (beside "Player Name," which I hope you can fill in without my help) is the series of four boxes
+        in the upper right. As you can tell from the labels, they're meant to provide a snapshot of your character's personality like a roleplay
+        cheat sheet. But I think it's pretty reductive, and can't possible capture the potential complexity of an actual character.
+      </p>
+      <p>
+        First up is <strong>personality traits</strong>. According to the rules, you're supposed to have two, but I'd encourage you to come up
+        with as many as possible. These are mannerisms, quirks, and other little things that add up to who you are. Essentially, anything that
+        doesn't fall into the other three categories.
+      </p>
+      <p>
+        Next is your <strong>ideal</strong>. You only need one of these. In essence, it's a way of thinking or a code that you live by. A
+        personal belief that drives you, like, "Treat others how you want to be treated," or, "Honesty is the best policy." What principles
+        drive your character?
+      </p>
+      <p>
+        Then there's the <strong>bond</strong>. This is like a goal, or a conviction. Something you strive to attain, something you want to
+        protect, something you need to destroy. It could be anything from a beloved daughter or little sister, to avenging a dead companion, to
+        stolen property you intend to retreive, to a debt you intend to repay.
+      </p>
+      <p>
+        Finally, the <strong>flaw</strong>. This one is self-explanatory. Just something <em>wrong</em> with your character. Like trust issues
+        or compulsive lying or Tourettes. Don't actually do that one though.
+      </p>
+      <p>
+        All said and done, I still find these stupid. The way you display your character's personality doesn't need to be so formulaic. Every
+        character has these things by definition, but they're not as important in some as in others. The flaw comes to mind as something that
+        doesn't necessarily need to take center stage all the time.
+      </p>
+      <p>
+        My advice is to always remember three things about your character every time you say or do something in-character:
+      </p>
+      <div class="row" style="margin: 2rem;">
+        <div class="col-4">
+          <p>
+            What are your <strong>values</strong>?
+          </p>
+        </div>
+        <div class="col-4">
+          <p>
+            What are your <strong>goals</strong>?
+          </p>
+        </div>
+        <div class="col-4">
+          <p>
+            What are your <strong>mannerisms</strong>?
+          </p>
+        </div>
+      </div>
+      <p>
+        These three things will make for a consistent and believable performance, and build a unique image of who your character is.
+      </p>
     </section>
   </main>
 </body>

@@ -34,7 +34,7 @@ nav a:hover {
 /********************************* MAIN BODY CONTENT *********************************/
 main {
     background-image: url("../img/parchment.jpg");
-    background-size: 55%;
+    background-size: 50%;
 }
 
 @media screen and (min-width: 576px) {
@@ -82,6 +82,10 @@ th {
 td {
     border-style: none;
     font-size: 1.2rem;
+}
+
+.trait-list {
+    list-style: none;
 }
 
 .nav-box {
