@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle of Land</title>
+  <link rel="icon" href="../../favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../guide.html#race">Race</a></li>
+          <li><a href="../../guide.html#class">Class</a></li>
+          <li><a href="../../guide.html#background">Background</a></li>
+          <li><a href="../../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Lore</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../lore/primer.html">Primer</a></li>
+          <li><a href="../../lore/overview.html">Overview</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../../races/elf.html">Elf</a></li>
+            <li><a href="../../races/genasi.html">Genasi</a></li>
+            <li><a href="../../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../../races/halfling.html">Halfling</a></li>
+            <li><a href="../../races/human.html">Human</a></li>
+            <li><a href="../../races/tiefling.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../artificer.html">Artificer</a></li>
+            <li><a href="../barbarian.html">Barbarian</a></li>
+            <li><a href="../bard.html">Bard</a></li>
+            <li><a href="../cleric.html">Cleric</a></li>
+            <li><a href="../druid.html">Druid</a></li>
+            <li><a href="../fighter.html">Fighter</a></li>
+            <li><a href="../monk.html">Monk</a></li>
+            <li><a href="../paladin.html">Paladin</a></li>
+            <li><a href="../ranger.html">Ranger</a></li>
+            <li><a href="../rogue.html">Rogue</a></li>
+            <li><a href="../sorcerer.html">Sorcerer</a></li>
+            <li><a href="../warlock.html">Warlock</a></li>
+            <li><a href="../wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Druid: Circle of the Land</h1>
+    <p>
+      The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids
+      meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the
+      chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your
+      magic is influenced by the land where you were initiated into the circle's mysterious rites.
+    </p>
+
+    <h2>Bonus Cantrip</h2>
+    <p>
+      When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the
+      number of druid cantrips you know.
+    </p>
+
+    <h2>Natural Recovery</h2>
+    <p>
+      Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest,
+      you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level
+      (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.
+    </p>
+    <p>
+      For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot
+      or two 1st-level slots.
+    </p>
+
+    <h2>Circle Spells</h2>
+    <p>
+      Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to
+      circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or
+      Underdark—and consult the associated list of spells.
+    </p>
+    <p>
+      Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each
+      day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Arctic</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Hold Person, Spike Growth</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Sleet Storm, Slow</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Freedom of Movement, Ice Storm</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Commune with Nature, Cone of Cold</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Coast</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Mirror Image, Misty Step</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Water Breathing Water Walk</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Control Water, Freedom of Movement</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Conjure Elemental, Scrying</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Desert</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Blur, Silence</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Create Food and Water, Protection from Energy</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Blight, Hallucinatory Terrain</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Insect Plauge, Wall of Stone</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Forest</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Barkskin, Spider Climb</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Call Lightning, Plant Growth</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Divination, Freedom of Movement</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Commune with Nature, Tree Stride</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Grassland</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Invisibility, Pass without Trace</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Daylight, Haste</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Divination, Freedom of Movement</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Dream, Insect Plague</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Mountain</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Spider Climb, Spike Growth</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Lightning Bolt, Meld into Stone</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Stone Shape, Stoneskin</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Passwall, Wall of Stone</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Swamp</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Darkness, Melf's Acid Arrow</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Water Walk, Stinking Cloud</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Freedom of Movement, Locate Creature</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Insect Plague, Scrying</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr class="table-h1">
+          <th colspan="2">Underdark</th>
+        </tr>
+        <tr>
+          <th>Druid Level</th>
+          <th>Circle Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>Spider Climb, Web</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Gaseous Form, Stinking Cloud</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Greater Invisibility, Stone Shape</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Cloudkill, Insect Plague</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Land's Stride</h2>
+    <p>
+      Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants
+      without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+    </p>
+    <p>
+      In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those
+      created by the Entangle spell.
+    </p>
+
+    <h2>Nature's Ward</h2>
+    <p>When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.</p>
+
+    <h2>Nature's Sanctuary</h2>
+    <p>
+      When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or
+      plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature
+      must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24
+      hours.
+    </p>
+    <p>The creature is aware of this effect before it makes its attack against you.</p>
+  </main>
+</body>
+</html>

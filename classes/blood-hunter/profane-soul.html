@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order of the Profane Soul</title>
+  <link rel="icon" href="../../favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../guide.html#race">Race</a></li>
+          <li><a href="../../guide.html#class">Class</a></li>
+          <li><a href="../../guide.html#background">Background</a></li>
+          <li><a href="../../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Lore</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../lore/primer.html">Primer</a></li>
+          <li><a href="../../lore/overview.html">Overview</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../../races/elf.html">Elf</a></li>
+            <li><a href="../../races/genasi.html">Genasi</a></li>
+            <li><a href="../../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../../races/halfling.html">Halfling</a></li>
+            <li><a href="../../races/human.html">Human</a></li>
+            <li><a href="../../races/tiefling.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="artificer.html">Artificer</a></li>
+            <li><a href="barbarian.html">Barbarian</a></li>
+            <li><a href="bard.html">Bard</a></li>
+            <li><a href="cleric.html">Cleric</a></li>
+            <li><a href="druid.html">Druid</a></li>
+            <li><a href="fighter.html">Fighter</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="paladin.html">Paladin</a></li>
+            <li><a href="ranger.html">Ranger</a></li>
+            <li><a href="rogue.html">Rogue</a></li>
+            <li><a href="sorcerer.html">Sorcerer</a></li>
+            <li><a href="warlock.html">Warlock</a></li>
+            <li><a href="wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Blood Hunter: Order of the Profane Soul</h1>
+    <p>
+      Blood hunters belonging to the Order of the Profane Soul push the limits of hemocraft for use against the most terrifying creatures
+      corrupting the world. The founders trusted their resilience as they delved into the same well of corrupting arcane knowledge, making pacts
+      with lesser evils to better combat the greater threats. And though they might have traded a part of themselves for their power, the members
+      of this order know the benefits of that power far outweigh the price.
+    </p>
+    <p>
+      <em>
+        If your blood hunter is part of the Order of the Profane Soul and also has warlock levels, add one-third of your blood hunter levels
+        (rounded down) to your warlock level and consult the warlock progression table for total spell slots, cantrips known, and spell slot
+        level. You should consider aligning your Otherworldly Patron feature between both classes, but your DM might allow you to have two
+        different patrons at their discretion.
+      </em>
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th colspan="5">Profane Soul Spellcasting</th>
+        </tr>
+        <tr>
+          <th class="table-h2">Blood Hunter Level</th>
+          <th class="table-h2">Cantrips Known</th>
+          <th class="table-h2">Spells Known</th>
+          <th class="table-h2">Spell Slots</th>
+          <th class="table-h2">Slot Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3rd</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1st</td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>1st</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>2</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1st</td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>2</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1st</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>2</td>
+          <td>4</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>2</td>
+          <td>4</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>2</td>
+          <td>5</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>2</td>
+          <td>5</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>3</td>
+          <td>5</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>3</td>
+          <td>6</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>3</td>
+          <td>6</td>
+          <td>2</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>3</td>
+          <td>7</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>3</td>
+          <td>7</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>3</td>
+          <td>8</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>3</td>
+          <td>8</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>3</td>
+          <td>9</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>3</td>
+          <td>9</td>
+          <td>2</td>
+          <td>3rd</td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>3</td>
+          <td>10</td>
+          <td>2</td>
+          <td>4th</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>3</td>
+          <td>11</td>
+          <td>2</td>
+          <td>4th</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Otherworldly Patron</h3>
+    <p>When you reach 3rd level, you strike a bargain with an otherworldly being of your choice from the warlock class page.</p>
+    <p>The choice you make augments some of your subclass features, as noted below.</p>
+
+    <h3>Pact Magic</h3>
+    <p>
+      When you reach 3rd level, you can augment your combat techniques with the ability to cast spells. The spells you can learn can be found on
+      the Warlock spell list.
+    </p>
+    <p>
+      <strong>Cantrips.</strong> You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of
+      your choice at 10th level.
+    </p>
+    <p>
+      <strong>Spell Slots.</strong> The Profane Soul Spellcasting table shows how many spell slots you have. The table also shows what the level
+      of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a
+      spell slot. You regain all expended spell slots when you finish a short or long rest.
+    </p>
+    <p>
+      For example, when you are 8th level, you have two 2nd-level spell slots. To cast the 1st-level spell Witch Bolt, you must spend one of
+      those slots, and you cast it as a 2nd-level spell.
+    </p>
+    <p>
+      <strong>Spells Known of 1st Level and Higher.</strong> At 3rd level, you know two 1st-level spells of your choice from the warlock spell
+      list.
+    </p>
+    <p>
+      The Spells Known column of the Profane Soul Spellcasting table shows when you learn more warlock spells of your choice of 1st level and
+      higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach
+      13th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
+    </p>
+    <p>
+      Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from
+      the warlock spell list, which also must be of a level for which you have spell slots.
+    </p>
+    <p>
+      <strong>Spellcasting Ability.</strong> Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your warlock
+      spells, so you use your Hemocraft ability whenever a spell refers to your spellcasting ability. In addition, you use your Hemocraft
+      modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
+    </p>
+    <p><strong>Spell save DC =</strong> 8 + your proficiency bonus + your Hemocraft modifier.</p>
+    <p><strong>Spell attack modifier =</strong> your proficiency bonus + your Hemocraft modifier.</p>
+
+    <h2>Rite Focus</h2>
+    <ul class="list-unstyled">
+      <li>
+        Starting at 3rd level, your weapon becomes a conduit for the power of your pact with your chosen patron. While you have an active crimson
+        rite, you can use your weapon as a spellcasting focus for your warlock spells, and you gain a specific benefit based on your chosen pact.
+      </li>
+      <li>
+        <strong>The Archfey.</strong> When you damage a creature with a weapon for which you have an active crimson rite, that creature glows with
+        faint light until the end of your next turn. For the duration, the creature gains no benefit from any cover or from being invisible.
+      </li>
+      <li>
+        <strong>The Celestial.</strong> As a bonus action, you expend one use of your Blood Maledict feature to heal one creature you can see
+        within 60 feet of you. That creature regains a number of hit points equal to one roll of your hemocraft die + your Hemocraft modifier
+        (minimum of +1).
+      </li>
+      <li>
+        <strong>The Fathomless.</strong> You can breathe underwater. Additionally, once per turn when you damage a creature with a weapon for which
+        you have an active crimson rite, you can reduce that creature's speed by 10 feet until the start of your next turn.
+      </li>
+      <li>
+        <strong>The Fiend.</strong> While using the Rite of the Flame, if you roll a 1 or 2 on a damage die when you roll the extra damage from the
+        rite, you can reroll the die and choose which roll to use.
+      </li>
+      <li>
+        <strong>The Genie.</strong> As a bonus action, you expend a use of your Blood Maledict feature to give yourself a flying speed of 30 feet,
+        which lasts for a number of rounds equal to your Hemocraft modifier (minimum of 1 round).
+      </li>
+      <li>
+        <strong>The Great Old One.</strong> When you score a critical hit against a creature, that creature and any other creatures of your choice
+        within 10 feet of it are frightened of you until the end of your next turn.
+      </li>
+      <li>
+        <strong>The Hexblade.</strong> When you successfully target a creature with a blood curse, the next time you hit that creature with an
+        attack while the curse is in effect, the attack deals additional damage equal to your proficiency modifier.
+      </li>
+      <li>
+        <strong>The Undead.</strong> When you take necrotic damage, you can use your reaction to halve that damage. In addition, your appearance
+        changes to reflect some aspect of your patron while you have any crimson rite active.
+      </li>
+      <li>
+        <strong>The Undying.</strong> When you reduce an enemy to 0 hit points, you regain a number of hit points equal to one roll of your
+        hemocraft die.
+      </li>
+    </ul>
+
+    <h2>Mystic Frenzy</h2>
+    <p>Starting at 7th level, when you use your action to cast a cantrip, you can immediately make one weapon attack as a bonus action.</p>
+
+    <h2>Revealed Arcana</h2>
+    <p>
+      At 7th level, your patron grants you the use of a distinctive spell based on your pact. You cast this spell using any pact magic spell
+      slot, and can't do so again until you finish a long rest.
+    </p>
+    <ul class="list-unstyled">
+      <li><strong></strong> You can cast Blur.</li>
+      <li><strong>The Celestial.</strong> You can cast Lesser Restoration.</li>
+      <li><strong>The Fathomless.</strong> You can cast Gust of Wind.</li>
+      <li><strong>The Fiend.</strong> You can cast Scorching Ray.</li>
+      <li><strong>The Genie.</strong> You can cast Phantasmal Force.</li>
+      <li><strong>The Great Old One.</strong> You can cast Detect Thoughts.</li>
+      <li><strong>The Hexblade.</strong> You can cast Branding Smite.</li>
+      <li><strong>The Undead.</strong> You can cast Blindness/Deafness.</li>
+      <li><strong>The Undying.</strong> You can cast Silence.</li>
+    </ul>
+
+    <h2>Brand of the Sapping Scar</h2>
+    <p>
+      Upon reaching 11th level, your Brand of Castigation feature digs dark arcane scars into your target, leaving them vulnerable to your magic.
+      A creature branded by you has disadvantage on saving throws against your warlock spells.
+    </p>
+
+    <h2>Unsealed Arcana</h2>
+    <p>
+      At 15th level, your patron grants you the use of an additional spell based on your pact. You cast this spell without expending a spell
+      slot, and can't do so again until you finish a long rest.
+    </p>
+    <ul class="list-unstyled">
+      <li><strong>The Archfey.</strong> You can cast Slow.</li>
+      <li><strong>The Celestial.</strong> You can cast Revivify.</li>
+      <li><strong>The Fathomless.</strong> You can cast Lightning Bolt.</li>
+      <li><strong>The Fiend.</strong> You can cast Fireball.</li>
+      <li><strong>The Genie.</strong> You can cast Protection from Energy.</li>
+      <li><strong>The Great Old One.</strong> You can cast Haste.</li>
+      <li><strong>The Hexblade.</strong> You can cast Blink.</li>
+      <li><strong>The Undead.</strong> You can cast Speak with Dead.</li>
+      <li><strong>The Undying.</strong> You can cast Bestow Curse.</li>
+    </ul>
+
+    <h2>Blood Curse of the Souleater</h2>
+    <p>
+      Starting at 18th level, you learn to siphon the life energy from your fallen prey. You gain the Blood Curse of the Soul Eater for your
+      Blood Maledict feature. This doesn't count against your number of blood curses known.
+    </p>
+  </main>
+</body>
+</html>

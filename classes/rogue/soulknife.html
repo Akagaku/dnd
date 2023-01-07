@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulknife</title>
+  <link rel="icon" href="../../favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../guide.html#race">Race</a></li>
+          <li><a href="../../guide.html#class">Class</a></li>
+          <li><a href="../../guide.html#background">Background</a></li>
+          <li><a href="../../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Lore</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../lore/primer.html">Primer</a></li>
+          <li><a href="../../lore/overview.html">Overview</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../../races/elf.html">Elf</a></li>
+            <li><a href="../../races/genasi.html">Genasi</a></li>
+            <li><a href="../../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../../races/halfling.html">Halfling</a></li>
+            <li><a href="../../races/human.html">Human</a></li>
+            <li><a href="../../races/tiefling.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../artificer.html">Artificer</a></li>
+            <li><a href="../barbarian.html">Barbarian</a></li>
+            <li><a href="../bard.html">Bard</a></li>
+            <li><a href="../cleric.html">Cleric</a></li>
+            <li><a href="../druid.html">Druid</a></li>
+            <li><a href="../fighter.html">Fighter</a></li>
+            <li><a href="../monk.html">Monk</a></li>
+            <li><a href="../paladin.html">Paladin</a></li>
+            <li><a href="../ranger.html">Ranger</a></li>
+            <li><a href="../rogue.html">Rogue</a></li>
+            <li><a href="../sorcerer.html">Sorcerer</a></li>
+            <li><a href="../warlock.html">Warlock</a></li>
+            <li><a href="../wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Rogue: Soulknife</h1>
+    <p>
+      Most assassins strike with physical weapons, and many burglars and spies use thieves' tools to infiltrate secure locations. In contrast, a
+      Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power
+      within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often
+      mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to
+      employ a Soulknife as a spy.
+    </p>
+    <p>
+      As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced
+      the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your
+      power.
+    </p>
+
+    <h2>Psionic Power</h2>
+    <p>
+      Starting at 3rd level, you harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice,
+      which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have,
+      which are detailed below.
+    </p>
+    <p>
+      Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires
+      you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition,
+      as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.
+    </p>
+    <p>
+      When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th
+      level (d12).
+    </p>
+    <p>The powers below use your Psionic Energy dice.</p>
+    <p>
+      <strong><em>Psi-Bolstered Knack.</em></strong> When your nonpsionic training fails you, your psionic power can help: if you fail an ability
+      check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check,
+      potentially turning failure into success. You expend the die only if the roll succeeds.
+    </p>
+    <p>
+      <strong><em>Psychic Whispers.</em></strong> You can establish telepathic communication between yourself and others — perfect for quiet
+      infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then
+      roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and
+      you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile
+      of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any
+      time (no action required). You and the creature don't need to speak a common language to understand each other.
+    </p>
+    <p>
+      The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you
+      expend the die.
+    </p>
+
+    <h2>Psychic Blades</h2>
+    <p>
+      Also at 3rd level, You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can
+      manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse
+      and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the
+      ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on
+      its target if it deals damage.
+    </p>
+    <p>
+      After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same
+      turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+    </p>
+
+    <h2>Soul Blades</h2>
+    <p>
+      Starting at 9th level, your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic
+      Energy dice:
+    </p>
+    <p>
+      <strong><em>Homing Strikes.</em></strong> If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic
+      Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.
+    </p>
+    <p>
+      <strong><em>Psychic Teleportation.</em></strong> As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die
+      and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You
+      then teleport to that space, and the blade vanishes.
+    </p>
+
+    <h2>Psychic Veil</h2>
+    <p>
+      At 13th level, you can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with
+      anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early
+      immediately after you deal damage to a creature, or you force a creature to make a saving throw.
+    </p>
+    <p>
+      Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature
+      again.
+    </p>
+
+    <h2>Rend Mind</h2>
+    <p>
+      When you reach 17th level, you can sweep your Psychic Blade directly through a creature's mind. When you use your Psychic Blades to deal
+      Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your
+      Dexterity modifier). If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of
+      each of its turns, ending the effect on itself on a success.
+    </p>
+    <p>
+      Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again.
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle of the Stars</title>
+  <link rel="icon" href="../../favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../guide.html#race">Race</a></li>
+          <li><a href="../../guide.html#class">Class</a></li>
+          <li><a href="../../guide.html#background">Background</a></li>
+          <li><a href="../../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Lore</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../lore/primer.html">Primer</a></li>
+          <li><a href="../../lore/overview.html">Overview</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../../races/elf.html">Elf</a></li>
+            <li><a href="../../races/genasi.html">Genasi</a></li>
+            <li><a href="../../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../../races/halfling.html">Halfling</a></li>
+            <li><a href="../../races/human.html">Human</a></li>
+            <li><a href="../../races/tiefling.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../artificer.html">Artificer</a></li>
+            <li><a href="../barbarian.html">Barbarian</a></li>
+            <li><a href="../bard.html">Bard</a></li>
+            <li><a href="../cleric.html">Cleric</a></li>
+            <li><a href="../druid.html">Druid</a></li>
+            <li><a href="../fighter.html">Fighter</a></li>
+            <li><a href="../monk.html">Monk</a></li>
+            <li><a href="../paladin.html">Paladin</a></li>
+            <li><a href="../ranger.html">Ranger</a></li>
+            <li><a href="../rogue.html">Rogue</a></li>
+            <li><a href="../sorcerer.html">Sorcerer</a></li>
+            <li><a href="../warlock.html">Warlock</a></li>
+            <li><a href="../wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Druid: Circle of the Stars</h1>
+    <p>
+      The Circle of Stars allows druids to draw on the power of starlight. These druids have tracked heavenly patterns since time immemorial,
+      discovering secrets hidden amid the constellations. By revealing and understanding these secrets, the Circle of the Stars seeks to harness
+      the powers of the cosmos.
+    </p>
+    <p>
+      Many druids of this circle keep records of the constellations and the stars' effects on the world. Some groups document these observations
+      at megalithic sites, which serve as enigmatic libraries of lore. These repositories might take the form of stone circles, pyramids,
+      petroglyphs, and underground temples; any construction durable enough to protect the circle's sacred knowledge even against a great
+      cataclysm.
+    </p>
+
+    <h2>Star Map</h2>
+    <p>
+      At 2nd level, you've created a star chart as part of your heavenly studies. It is a Tiny object and can serve as a spellcasting focus for
+      your druid spells. You determine its form by rolling on the Star Map table or by choosing one.
+    </p>
+    <p>While holding this map, you have these benefits:</p>
+    <ul>
+      <li>You know the Guidance cantrip.</li>
+      <li>
+        You have the Guiding Bolt spell prepared. It counts as a druid spell for you, and it doesn't count against the number of spells you can
+        have prepared.
+      </li>
+      <li>
+        You can cast Guiding Bolt without expending a spell slot. You can do so a number of times equal to your proficiency bonus, and you regain
+        all expended uses when you finish a long rest.
+      </li>
+    </ul>
+    <p>
+      If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a short or
+      long rest, and it destroys the previous map.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>d6</th>
+          <th>Map Form</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>A scroll covered with depictions of constellations</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>A stone tablet with fine holes drilled through it</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>	A speckled owlbear hide, tooled with raised marks</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>A collection of maps bound in an ebony cover</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>A crystal that projects starry patterns when placed before a light</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Glass disks that depict constellations</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Starry Form</h2>
+    <p>
+      At 2nd level, you gain the ability to harness constellations' power to alter your form. As a bonus action, you can expend a use of your
+      Wild Shape feature to take on a starry form, rather than transforming into a beast.
+    </p>
+    <p>
+      While in your starry form, you retain your game statistics, but your body becomes luminous; your joints glimmer like stars, and glowing
+      lines connect them as on a star chart. This form sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The form
+      lasts for 10 minutes. It ends early if you dismiss it (no action required), are incapacitated, die, or use this feature again.
+    </p>
+    <p>
+      Whenever you assume your starry form, choose which of the following constellations glimmers on your body; your choice gives you certain
+      benefits while in the form:
+    </p>
+    <p>
+      <strong>Archer.</strong> A constellation of an archer appears on you. When you activate this form, and as a bonus action on your subsequent
+      turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of you. On a
+      hit, the attack deals radiant damage equal to 1d8 + your Wisdom modifier.
+    </p>
+    <p>
+      <strong>Chalice.</strong> A constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that
+      restores hit points to a creature, you or another creature within 30 feet of you can regain hit points equal to 1d8 + your Wisdom modifier.
+    </p>
+    <p>
+      <strong>Dragon.</strong> A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution
+      saving throw to maintain concentration on a spell, you can treat a roll of 9 or lower on the d20 as a 10.
+    </p>
+    <h2>Cosmic Omen</h2>
+    <p>
+      When you reach 6th level, you learn to use your star map to divine the will of the cosmos. Whenever you finish a long rest, you can consult
+      your Star Map for omens. When you do so, roll a die. Until you finish your next long rest, you gain access to a special reaction based on
+      whether you rolled an even or an odd number on the die:
+    </p>
+    <p>
+      <strong>Weal (even).</strong> Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an
+      ability check, you can use your reaction to roll a d6 and add the number rolled to the total.
+    </p>
+    <p>
+      <strong>Woe (odd).</strong> Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an
+      ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.
+    </p>
+    <p>
+      You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    </p>
+
+    <h2>Twinkling Constellations</h2>
+    <p>
+      At 10th level, the constellations of your Starry Form improve. The 1d8 of the Archer and the Chalice becomes 2d8, and while the Dragon is
+      active, you have a flying speed of 20 feet and can hover.
+    </p>
+    <p>Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
+
+    <h2>Full of Stars</h2>
+    <p>
+      At 14th level, while in your Starry Form, you become partially incorporeal, giving you resistance to bludgeoning, piercing, and slashing
+      damage.
+    </p>
+  </main>
+</body>
+</html>

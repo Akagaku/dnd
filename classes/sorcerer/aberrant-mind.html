@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aberrant Mind</title>
+  <link rel="icon" href="../../favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../../index.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+  <nav class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" data-bs-backdorp="true" data-bs-scroll="true">
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../guide.html">Guide</a></li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../guide.html#race">Race</a></li>
+          <li><a href="../../guide.html#class">Class</a></li>
+          <li><a href="../../guide.html#background">Background</a></li>
+          <li><a href="../../guide.html#ability-scores">Ability Scores</a></li>
+          <li><a href="../../guide.html#assembly">Everything Else</a></li>
+        </ul>
+        <li>Lore</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li><a href="../../lore/primer.html">Primer</a></li>
+          <li><a href="../../lore/overview.html">Overview</a></li>
+        </ul>
+        <li>Resources</li>
+        <ul class="list-unstyled" style="margin-left: 1rem;">
+          <li>Races</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../../races/aasimar.html">Aasimar</a></li>
+            <li><a href="../../races/dragonborn.html">Dragonborn</a></li>
+            <li><a href="../../races/dwarf.html">Dwarf</a></li>
+            <li><a href="../../races/elf.html">Elf</a></li>
+            <li><a href="../../races/genasi.html">Genasi</a></li>
+            <li><a href="../../races/half-elf.html">Half-Elf</a></li>
+            <li><a href="../../races/half-orc.html">Half-Orc</a></li>
+            <li><a href="../../races/halfling.html">Halfling</a></li>
+            <li><a href="../../races/human.html">Human</a></li>
+            <li><a href="../../races/tiefling.html">Tiefling</a></li>
+          </ul>
+          <li>Classes</li>
+          <ul class="list-unstyled" style="margin-left: 1rem;">
+            <li><a href="../artificer.html">Artificer</a></li>
+            <li><a href="../barbarian.html">Barbarian</a></li>
+            <li><a href="../bard.html">Bard</a></li>
+            <li><a href="../cleric.html">Cleric</a></li>
+            <li><a href="../druid.html">Druid</a></li>
+            <li><a href="../fighter.html">Fighter</a></li>
+            <li><a href="../monk.html">Monk</a></li>
+            <li><a href="../paladin.html">Paladin</a></li>
+            <li><a href="../ranger.html">Ranger</a></li>
+            <li><a href="../rogue.html">Rogue</a></li>
+            <li><a href="../sorcerer.html">Sorcerer</a></li>
+            <li><a href="../warlock.html">Warlock</a></li>
+            <li><a href="../wizard.html">Wizard</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Sorcerer: Aberrant Mind</h1>
+    <p>
+      An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and
+      alter the world around you by using it to control the magical energy of the multiverse. Will this power shine from you as a hopeful beacon
+      to others? Or will you be a source of terror to those who feel the stab of your mind and witness the strange manifestations of your might?
+    </p>
+    <p>
+      As an Aberrant Mind sorcerer, you decide how you acquired your powers. Were you born with them? Or did an event later in life leave you
+      shining with psionic awareness? Consult the Aberrant Origins table for a possible origin of your power.
+    </p>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>1d6</th>
+          <th>Origin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            You were exposed to the Far Realm's warping influence. You are convinced that a tentacle is now growing on you, but no one else can
+            see it.
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            A psychic wind from the Astral Plane carried psionic energy to you. When you use your powers, faint motes of light sparkle around you.
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>You once suffered the dominating powers of an aboleth, leaving a psychic splinter in your mind.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            You were implanted with a mind flayer tadpole, but the ceremorphosis never completed. And now its psionic power is yours. When you use
+            it, your flesh shines with a strange mucus.
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            As a child, you had an imaginary friend that looked like a flumph or a strange platypus-like creature. One day, it gifted you with
+            psionic powers, which have ended up being not so imaginary.
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Your nightmares whisper the truth to you: your psionic powers are not your own. You draw them from your parasitic twin!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Psionic Spells</h2>
+    <p>
+      Starting at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the Psionic Spells table. Each
+      of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.
+    </p>
+    <p>
+      Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new
+      spell must be a divination or an enchantment spell from the sorcerer, warlock, or wizard spell list.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Sorcerer Level</th>
+          <th>Spells</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>Arms of Hadar, Dissonant Whispers, Mind Sliver</td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>Calm Emotions, Detect Thoughts</td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>Hunger of Hadar, Sending</td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>Evard's Black Tentacles, Summon Aberration</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>Rary's Telepathic Bond, Telekinesis</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Telepathic Speech</h2>
+    <p>
+      Starting at 1st level, you can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one
+      creature you can see within 30 feet of you. You and the chosen creature can speak telepathically with each other while the two of you are
+      within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak
+      mentally in a language the other knows.
+    </p>
+    <p>
+      The telepathic connection lasts for a number of minutes equal to your sorcerer level. It ends early if you are incapacitated or die or if
+      you use this ability to form a connection with a different creature.
+    </p>
+
+    <h2>Psionic Sorcery</h2>
+    <p>
+      Beginning at 6th level, when you cast any spell of 1st level or higher from your Psionic Spells feature, you can cast it by expending a
+      spell slot as normal or by spending a number of sorcery points equal to the spell's level. If you cast the spell using sorcery points, it
+      requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell.
+    </p>
+
+    <h2>Psychic Defenses</h2>
+    <p>At 6th level, you gain resistance to psychic damage, and you have advantage on saving throws against being charmed or frightened.</p>
+
+    <h2>Revelation in Flesh</h2>
+    <p>
+      Beginning at 14th level, you can unleash the aberrant truth hidden within yourself. As a bonus action, you can spend 1 or more sorcery
+      points to magically transform your body for 10 minutes. For each sorcery point you spend, you can gain one of the following benefits of your
+      choice, the effects of which last until the transformation ends:
+    </p>
+    <ul>
+      <li>
+        You can see any invisible creature within 60 feet of you, provided it isn't behind total cover. Your eyes also turn black or become
+        writhing sensory tendrils.
+      </li>
+      <li>
+        You gain a flying speed equal to your walking speed and can hover. As you fly, your skin glistens with mucus or shines with an
+        otherworldly light.
+      </li>
+      <li>
+        You gain a swimming speed equal to twice your walking speed, and you can breathe underwater. Moreover, gills grow from your neck or fan
+        out from behind your ears, your fingers become webbed, or you grow writhing cilia that extend through your clothing.
+      </li>
+      <li>
+        Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1
+        inch without squeezing, and you can spend 5 feet of movement to escape from nonmagical restraints or being grappled.
+      </li>
+    </ul>
+
+    <h2>Warping Implosion</h2>
+    <p>
+      At 18th level, you can unleash your aberrant power as a space-warping anomaly. As an action, you can teleport to an unoccupied space you can
+      see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving
+      throw. On a failed save, a creature takes 3d10 force damage and is pulled straight toward the space you left, ending in an unoccupied space
+      as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.
+    </p>
+    <p>Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again.</p>
+  </main>
+</body>
+</html>
