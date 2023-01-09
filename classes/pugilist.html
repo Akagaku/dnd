@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pugilist</title>
+  <link rel="icon" href="/favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/index.js"></script>
+</head>
+<body>
+  <aside id="navbar"></aside>
+  <main>
+    <table class="table table-striped class-table">
+      <thead>
+        <tr>
+          <th colspan="5">The Pugilist</th>
+        </tr>
+        <tr>
+          <th class="table-h2">Level</th>
+          <th class="table-h2">Prof. Bonus</th>
+          <th class="table-h2">Fisticuffs</th>
+          <th class="table-h2">Moxie Points</th>
+          <th class="table-h2" style="width: auto;">Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td>-</td>
+          <td><a href="#fisticuffs">Fisticuffs</a>, <a href="#iron-chin">Iron Chin</a></td>
+        </tr>
+        <tr>
+          <td>2nd</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td>2</td>
+          <td><a href="#moxie">Moxie</a>, <a href="#street-smart">Street Smart</a></td>
+        </tr>
+        <tr>
+          <td>3rd</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td>2</td>
+          <td><a href="#bloodied-but-unbowed">Bloodied but Unbowed</a>, <a href="#fight-club">Fight Club</a></td>
+        </tr>
+        <tr>
+          <td>4th</td>
+          <td>+2</td>
+          <td>1d6</td>
+          <td>3</td>
+          <td>Ability Score Improvement, <a href="#dig-deep">Dig Deep</a></td>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>+3</td>
+          <td>1d8</td>
+          <td>3</td>
+          <td><a href="#extra-attack">Extra Attack</a>, <a href="#haymaker">Haymaker</a></td>
+        </tr>
+        <tr>
+          <td>6th</td>
+          <td>+3</td>
+          <td>1d8</td>
+          <td>4</td>
+          <td>Fight Club feature, <a href="#moxie-fueled-fists">Moxie-Fueled Fists</a></td>
+        </tr>
+        <tr>
+          <td>7th</td>
+          <td>+3</td>
+          <td>1d8</td>
+          <td>4</td>
+          <td><a href="#fancy-footwork">Fancy Footwork</a>, <a href="#shake-it-off">Shake it Off</a></td>
+        </tr>
+        <tr>
+          <td>8th</td>
+          <td>+3</td>
+          <td>1d8</td>
+          <td>5</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>9th</td>
+          <td>+4</td>
+          <td>1d8</td>
+          <td>5</td>
+          <td><a href="#down-but-not-out">Down but Not Out</a></td>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td>+4</td>
+          <td>1d8</td>
+          <td>6</td>
+          <td><a href="#school-of-hard-knocks">School of Hard Knocks</a></td>
+        </tr>
+        <tr>
+          <td>11th</td>
+          <td>+4</td>
+          <td>1d10</td>
+          <td>6</td>
+          <td>Fight Club feature</td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td>+4</td>
+          <td>1d10</td>
+          <td>7</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>13th</td>
+          <td>+5</td>
+          <td>1d10</td>
+          <td>7</td>
+          <td><a href="#rabble-rouser">Rabble Rouser</a></td>
+        </tr>
+        <tr>
+          <td>14th</td>
+          <td>+5</td>
+          <td>1d10</td>
+          <td>8</td>
+          <td><a href="#unbreakable">Unbreakable</a></td>
+        </tr>
+        <tr>
+          <td>15th</td>
+          <td>+5</td>
+          <td>1d10</td>
+          <td>8</td>
+          <td><a href="#herculean">Herculean</a></td>
+        </tr>
+        <tr>
+          <td>16th</td>
+          <td>+5</td>
+          <td>1d10</td>
+          <td>9</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>17th</td>
+          <td>+6</td>
+          <td>1d12</td>
+          <td>9</td>
+          <td>Fight Club feature</td>
+        </tr>
+        <tr>
+          <td>18th</td>
+          <td>+6</td>
+          <td>1d12</td>
+          <td>10</td>
+          <td><a href="#fighting-spirit">Fighting Spirit</a></td>
+        </tr>
+        <tr>
+          <td>19th</td>
+          <td>+6</td>
+          <td>1d12</td>
+          <td>10</td>
+          <td>Ability Score Improvement</td>
+        </tr>
+        <tr>
+          <td>20th</td>
+          <td>+6</td>
+          <td>1d12</td>
+          <td>12</td>
+          <td><a href="#peak-physical-condition">Peak Physical Condition</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Class Features</h1>
+    <p>As a , you gain the following class features.</p>
+
+    <h3>Hit Points</h3>
+    <p>
+      <strong>Hit Dice:</strong> 1d8 per pugilist level<br>
+      <strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br>
+      <strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier<br>
+    </p>
+    <h3>Proficiencies</h3>
+    <p>
+      <strong>Armor:</strong> Light armor<br>
+      <strong>Weapons:</strong> Simple weapons, improvised weapons, whip, hand crossbow<br>
+      <strong>Tools:</strong> Your choice of one set of artisan's tools, one gaming set, or thieves' tools<br>
+      <strong>Saving Throws:</strong> Strength, Constitution<br>
+      <strong>Skills:</strong> Choose two skills from Acrobatics, Athletics, Deception, Intimidation, Perception, Sleight of Hand, and Stealth
+    </p>
+    <h3>Equipment</h3>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+      <li>(a) leather armor or (b) any simple weapon</li>
+      <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+      <li>(a) a set of artisan's tools, (b) a gaming set, or (c) a set of thieves' tools</li>
+    </ul>
+
+    <h2 id="fisticuffs">Fisticuffs</h2>
+    <p>
+      At 1st level, your years of fighting in back alleys and taverns have given you mastery over combat styles that use unarmed strikes and pugilist weapons, which are simple melee weapons without the two-handed property, whips, and improvised weapons. You can't use the finesse property of a weapon while using it as a pugilist weapon.
+    </p>
+    <p>
+      You gain the following benefits while you are unarmed or using only pugilist weapons, wearing light or no armor, and not using a shield:
+    </p>
+    <ul>
+      <li>
+        You can roll a d6 in place of the normal damage of your unarmed strike or pugilist weapon. This die changes as you gain pugilist levels, as shown in the Fisticuffs column on the Pugilist table.
+      </li>
+      <li>
+        When you use the Attack action on your turn and make only unarmed strikes, attacks with pugilist weapons, shove, or grapples, you can use a bonus action to make one grapple or unarmed strike.
+      </li>
+    </ul>
+
+    <h2 id="iron-chin">Iron Chin</h2>
+    <p>
+      Beginning at 1st level, while you are wearing light armor or no armor and not wielding a shield, your AC equals 12 + your Constitution modifier.
+    </p>
+
+    <h2 id="moxie">Moxie</h2>
+    <p>
+      Starting at 2nd level, your experience laying the beatdown on others has given you a moxie you can channel in the midst of battle. This swagger is represented by a number of moxie points. Your pugilist level determines the maximum number of points you have, as shown in the Moxie Points column of the Pugilist table.
+    </p>
+    <p>
+      You can spend these points to fuel various moxie features. You start knowing three such moxie features: Brace Up, The Old One-Two, and Stick and Move. You learn more moxie features as you gain levels in this class. You regain all expended moxie points when you finish a short or long rest.
+    </p>
+
+    <h3>Brace Up</h3>
+    <p>
+      You can use a bonus action and spend 1 moxie point to brace for attacks. You gain a number of temporary hit points equal to a roll of your fisticuffs die + your pugilist level + your Constitution modifier. You lose any remaining temporary hit points gain in this way after 1 minute.
+    </p>
+
+    <h3>The Old One-Two</h3>
+    <p>
+      Immediately after you take the Attack action on your turn, you can spend 1 moxie point to make two unarmed strikes as a bonus action.
+    </p>
+
+    <h3>Stick and Move</h3>
+    <p>
+      You can use a bonus action and expend 1 moxie point to attempt to shove a creature or take the Dash action.
+    </p>
+
+    <h2 id="street-smart">Street Smart</h2>
+    <p>
+      Beginning at 2nd level, carousing, shadowboxing, and sparring all count as light activity for the purposes of resting for you. Additionally, once you have caroused in a settlement for 8 hours or more, you know all public locations in the city as if you were born and raised there, and you cannot by lost my nonmagical means while within the city.
+    </p>
+
+    <h2 id="bloodied-but-unbowed">Bloodied but Unbowed</h2>
+    <p>
+      Starting at 3rd level, when you take damage that reduces you to half your maximum hit points or less, you can use your reaction to gain temporary hit points equal to three times your pugilist level and regain all your expended moxie points. Once you use this feature, you can't use it again until you finish a short or long rest.
+    </p>
+
+    <h2 id="fight-club">Fight Club</h2>
+    <p>
+      At 3rd level, you choose a fight club that exemplifies your style. Choose <a href="pugilist/arena-royale.html">Arena Royale</a>, <a href="pugilist/bloodhound-bruisers.html">Bloodhoud Bruisers</a>, <a href="pugilist/dog-and-hound.html">Dog and Hound</a>, <a href="pugilist/hand-of-dread.html">Hand of Dread</a>, <a href="pugilist/piss-and-vinegar.html">Piss and Vinegar</a>, the <a href="pugilist/squared-circle.html">Squared Circle</a>, or the <a href="pugilist/sweet-science.html">Sweet Science</a> Your fight club grants you features as 3rd level and again at 6th, 11th, and 17th level.
+    </p>
+
+    <h2>Ability Score Improvement</h2>
+    <p>
+      When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.
+    </p>
+
+    <h2 id="dig-deep">Dig Deep</h2>
+    <p>
+      At 4th level, you discover a strength inside you that can't be broken. As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage for 1 minute. A the end of that minute, you gain a level of exhaustion.
+    </p>
+
+    <h2 id="extra-attack">Extra Attack</h2>
+    <p>
+      Beginning at 5th level, you can ttack twice, instead of once, whenever you take the Attack action on your turn.
+    </p>
+
+    <h2 id="haymaker">Haymaker</h2>
+    <p>
+      Starting at 5th level, when you make an attack, you can declare you are throwing a wild haymaker. When you do, you have disadvantage on the attack roll and, if you hit with a pugilist weapon or unarmed strike, you deal the maximum possible amount of damage instead of rolling.
+    </p>
+
+    <h2 id="moxie-fueled-fists">Moxie-Fueled Fists</h2>
+    <p>
+      Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage.
+    </p>
+
+    <h2 id="fancy-footwork">Fancy Footwork</h2>
+    <p>
+      At 7th level, you gain proficiency in Dexterity saving throws.
+    </p>
+
+    <h2 id="shake-it-off">Shake it Off</h2>
+    <p>
+      Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.
+    </p>
+
+    <h2 id="down-but-not-out">Down but Not Out</h2>
+    <p>
+      Starting at 9th level, when you use your Bloodied but Unbowed feature, you can choose to also use this feature. If you do, you add your proficiency bonus to the damage of your unarmed strikes and pugilist weapons for the next minute.
+    </p>
+    <p>
+      Once you use this feature, you can't use it again until you finish a long rest.
+    </p>
+
+    <h2 id="school-of-hard-knocks">School of Hard Knocks</h2>
+    <p>
+      By 10th level, you've graduated top of the class at the school of hard knocks, and you took most of them on the head. You have resistance to psychic damage and have advantage on saving throws against effects that would make you stunned or unconscious.
+    </p>
+
+    <h2 id="rabble-rouser">Rabble Rouser</h2>
+    <p>
+      Starting at 13th level, word of your exploits travels quickly in cities and other settlements. Once you have taken a long rest in a settlement during which time you spend at least two hours carousing, you gain advantage on all Charisma (Persuasion) and Charima (Intimidation) checks made against the people who live there.
+    </p>
+
+    <h2 id="unbreakable">Unbreakable</h2>
+    <p>
+      Starting at 14th level, whenever you fail a saving throw, you can spend 1 moxie point to reroll it and take the second result.
+    </p>
+
+    <h2 id="herculean">Herculean</h2>
+    <p>
+      Starting at 15th level, your carrying capacity is doubled, and all damage you deal against inanimate objects with melee attacks is doubled. Additionally, treat all standing jumps as if you have a running start for the purpose of determining the jump's distance.
+    </p>
+
+    <h2 id="fighting-spirit">Fighting Spirit</h2>
+    <p>
+      Starting at 18th level, when you are reduced to 0 hit points, you can channel your fighting spirit. When you do, you regain half of your maximum hit points and half of your moxie points, and do not suffer the effects of any exhaustion you have for the next 10 minutes. At the end of those 10 minutes, you gain one level of exhaustion.
+    </p>
+    <p>
+      Once you use this feature, you can't use it again until you finish a long rest.
+    </p>
+
+    <h2 id="peak-physical-condition">Peak Physical Condition</h2>
+    <p>
+      At 10th level, your Strength and Constitution scores both increase by 2, to a maximum of 22. Additionally, when you take a long rest, you lose 2 levels of exhaustion instead of 1, and you regain all your expended Hit Dice instead of half.
+    </p>
+  </main>
+</body>
+</html>
