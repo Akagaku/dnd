@@ -86,22 +86,41 @@ td {
 
 .trait-list {
     list-style: none;
+    padding: 0;
+    text-indent: 2rem;
 }
 
 .nav-box {
-    background-color: #fffaf0;
-    border: solid 1px #aa0000;
+    background-color: #ffffcc;
+    border: solid 1px #660000;
     border-radius: 4px;
-    float: right;
     line-height: 0.5;
     padding: 1.5rem;
-    margin-left: 1rem;
+    position: fixed;
+    right: 10px;
+    top: 10px;
     width: fit-content;
 }
 
+.nav-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-box li {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
 .nav-box a {
+    color: #aa0000;
+    transition: 200ms;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.nav-box a:hover {
+    color: #ff0000;
 }
 
 .alert {

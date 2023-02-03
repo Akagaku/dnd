@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide</title>
+  <link rel="icon" href="/favicon.ico">
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/index.js"></script>
+</head>
+
+<body>
+  <aside id="navbar"></aside>
+  
+  <aside class="nav-box">
+    <ul>
+      <li><a href="#race">Race</a></li>
+      <ul class="list-unstyled" style="margin-left: 1rem;">
+        <li><a href="#flipping-the-script">Flipping the Script</a></li>
+        <li><a href="#racial-traits">Racial Traits</a></li>
+        <li><a href="#subrace">Subrace</a></li>
+      </ul>
+      <li><a href="#ability-scores">Ability Scores</a></li>
+      <ul class="list-unstyled" style="margin-left: 1rem;">
+        <li><a href="#modifiers">Modifiers</a></li>
+        <li><a href="#the-classic">The Classic</a></li>
+        <li><a href="#the-standard">The Standard</a></li>
+        <li><a href="#the-calculator">The Calculator</a></li>
+        <li><a href="#the-fuck-you">The Fuck You</a></li>
+      </ul>
+      <li><a href="#class">Class</a></li>
+      <ul class="list-unstyled" style="margin-left: 1rem;">
+        <li><a href="#hit-points">Hit Points</a></li>
+        <li><a href="#class-proficiencies">Proficiencies</a></li>
+        <li><a href="#class-equipment">Starting Equipment</a></li>
+        <li><a href="#class-features">Class Features</a></li>
+      </ul>
+      <li><a href="#background">Background</a></li>
+      <ul class="list-unstyled" style="margin-left: 1rem;">
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#background-proficiencies">Proficiencies</a></li>
+        <li><a href="#background-equipment">Starting Equipment</a></li>
+        <li><a href="#background-feature">Feature</a></li>
+      </ul>
+      <li><a href="#ability-scores">Ability Scores</a></li>
+      <ul class="list-unstyled" style="margin-left: 1rem;">
+        <li><a href="#classic">Classic</a></li>
+        <li><a href="#standard">Standard Array</a></li>
+        <li><a href="#point-buy">Point Buy</a></li>
+        <li><a href="#3d6">3d6</a></li>
+      </ul>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Character Creation Guide</h1>
+    <p>
+      Alright, you miserable maggots. Welcome to basic training. I am your senrior drill instructor. Here you will find every rule and resource
+      from A to Z on character creation in the fifth edition of Dungeons and Dragons. By the time you leave this page, you'll know everything you
+      need to know in order to make a killer persona to use in your games.
+    </p>
+    <p>
+      This page is formatted in order, so you can read it from top to bottom for the full Masterclass experience, and join me in the creation of
+      example character Shlorbak. Or, if you're looking for something specific, you can use the table of contents to jump around the page as you
+      please.
+    </p>
+    <p>
+      If you've never made a D&D character before—and I don't care how smart you think you are—I recommend doing it in order, if for no other
+      reason to learn the important aspects of a character and how they all work.
+    </p>
+
+    <h1 id="race">Race</h1>
+    <p>
+      Like in real life, everything in Dungeons and Dragons always comes back to race. But, unlike in real life, you can pick any race you want,
+      and no one is necessarily better than another. Except for half-elves. The core races (from the "core" three rulebooks) are as follows:
+    </p>
+
+    <div class="row" style="margin-bottom: 2rem;">
+      <div class="col-lg-6">
+        <div class="drop-div">
+          <h3 class="drop-btn" id="aasimar">Aasimar</h3>
+          <p class="drop-item drop-aasimar">
+            One of two "planetouched" core races: humans whose biology was affected by an encounter with a powerful being from another plane.
+            They're vaguely angelic in nature, and have—for whatever reason—had more revisions in this edition than the ranger class.
+          </p>
+        </div>
+        
+        <div class="drop-div">
+          <h3 class="drop-btn" id="dwarf">Dwarf</h3>
+          <p class="drop-item drop-dwarf">
+            Dwarves love to dig tunnels, drink ale, and smith things. They're loud, proud, and smaller than real people. But most importantly,
+            they'r all Scottish for some reason. <a href="#" data-bs-toggle="tooltip" data-bs-title="It's because of 18th century Scots' reputation
+            as coal miners and industrial capitalists. That's also why Scrooge McDuck is Scottish, in case you were wondering. Which, of course,
+            you were.">Go figure!</a> Yup, they're pretty much Tolkien dwarves, but girls don't get beards. Sorry, girls.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="gnome">Gnome</h3>
+          <p class="drop-item drop-gnome">
+            Gnomes are basically smaller halflings who do engineering. So, the inspiration for Warcraft gnomes. I'm personally not a fan of these
+            little freaks. They seem uninspired, more like a halfling subrace than their own thing. Actually, in first edition, they were a type of
+            dwarf. They didn't even have a separate race entry.
+          </p>
+        </div>
+        
+        <div class="drop-div">
+          <h3 class="drop-btn" id="half-orc">Half-Orc</h3>
+          <p class="drop-item drop-half-orc">
+            For decades, orcs were brutal, Chaotic Evil monsters who like to murder, pillage, and sacrifice. But over the past several years,
+            Wizards of the Coast has been doing a daintly little dance around the subject of half-orc children by making orcs more humanlike, so
+            you don't have to put "my mom was raped by an orc raider" in your backstory.
+          </p>
+        </div>
+        
+        <div class="drop-div">
+          <h3 class="drop-btn" id="human">Human</h3>
+          <p class="drop-item drop-human">
+            You know what these are. At least I hope so. They're just normal people like you and me. Well, like me.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="drop-div">
+          <h3 class="drop-btn" id="dragonborn">Dragonborn</h3>
+          <p class="drop-item drop-dragonborn">
+            Not dovahkiin. Sorry. They're big ol' lizards who look like humanoid dragons. No wings or tails, though. Their official lore is, "No
+            one knows. Write it yourself if you're so smart." And yes, female dragonborn have tits in the official art for their debut edition.
+            Believe it or not, Wizards of the Coast used to know what the people want.
+          </p>
+        </div>
+        
+        <div class="drop-div">
+          <h3 class="drop-btn" id="elf">Elf</h3>
+          <p class="drop-item drop-elf">
+            Elves are agile and hairless, and they love to climb trees. Kinda like those Egyptian cats. Sound familiar? Unlike Tolkien's elves,
+            they're a little bit shorter than humans. Some writers—myself and Terry Pratchett included—think elves are boring, and decided to fix
+            them.
+          </p>
+        </div>
+        
+        <div class="drop-div">
+          <h3 class="drop-btn" id="half-elf">Half-Elf</h3>
+          <p class="drop-item drop-half-elf">
+            Half-elves are children of an elves and a humans, because the Silmarillion wasn't out when they were added to the game, and everyone
+            still thought "Elrond Half-Elven" was literally half elf and half human. They're also way beyond busted in terms of mechanics, and
+            always have been.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="halfling">Halfling</h3>
+          <p class="drop-item drop-halfling">
+            Unlike elves and dwarves, which have precedents in Germanic folklore, halflings were invented by Tolkien. But it doesn't matter since
+            TSR won that lawsuit. They're short, they're sweet, and they keep to themselves. They also have a knack for sneaking around. Just like
+            a book I once read, though I can't remember the name of it.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="tiefling">Tiefling</h3>
+          <p class="drop-item drop-tiefling">
+            If you're a monsterfucker, edgelord, or Homestuck fan, you know this one. Also, stay far away from me. Like aasimar, tieflings are a
+            type of planetouched human. Unlike aasimar, they're eeeeeeeevil. Instead of angels, tieflings were created by fiends. And people treat
+            them like you'd think.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="flipping-the-script">Flipping the Script</h2>
+    <p>
+      Let this be the first lesson on this page. At the risk of quoting Pablo Picasso, you have to learn the rules like a pro so you can break them
+      like an artist. The rules are a good framework, but the most important part of the game is your imagination. In the original version of
+      Dungeons and Dragons (which was called <em>Men and Magic</em>—no joke), dwarves could <em>only</em> be fighters (which were called
+      <em>Fighting-Men</em>—also not a joke). What's that all about?
+    </p>
+    <p>
+      These days, things are different. Anyone can be a paladin, not just Lawful humans. Elves can reach 5th level as any class, not just as
+      wizards. Anyone can listen through doors to hear what's happening on the other side, not just the thief. (Again, I am not joking. That's how
+      it worked back then.) Since then, the designers have added a bunch of classes, countless races, and even six new alignments. There are more
+      options now, and that's nice, but why stop there?
+    </p>
+    <p>
+      At my table, the races don't actually work like above. They're more like this:
+    </p>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="drop-div">
+          <h3 class="drop-btn" id="aasimar-2">Aasimar</h3>
+          <p class="drop-item drop-aasimar-2">
+            Aasimari are exactly the same thematically, but now with three subraces based on different kinds of celestials: mana, asura, and
+            couatl. I made one of those up, but the other two are real D&D things. Each subrace has its own unique abilities, and they all have
+            wacky otherworldly appearances to make them more distinct from humans. I also changed the plural from aasimar to aasimari, because fuck
+            you. It sounds way better.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="dwarf-2">Dwarf</h3>
+          <p class="drop-item drop-dwarf-2">
+            I won't pretend Tolkien's dwarves aren't a bit one-note. They're cool, but they're just not as fleshed out as men or elves. But most
+            fantasy writers don't bother expanding on them. In <em>my</em> world, I decided to give them an interesting history and cultural
+            schisms. There are five dwarven strongholds born from five different mining colonies, and each has its own culture, language, and
+            genetic traits.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="genasi-2">Genasi</h3>
+          <p class="drop-item drop-genasi-2">
+            This is another planetouched race, but instead of being touched by celestials or fiends, they're genie people. Not like in Aladdin, but
+            they do grant wishes. These genies are elementals, and there are four kinds: efreet, djinn, marids, and dao. Each is associated with
+            one of the four elements. They're all funny colors, most of them have silly hair, and they have cool elemental magic powers.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="half-orc-2">Half-Orc</h3>
+          <p class="drop-item drop-half-orc-2">
+            I split orcs into two categories: the gray-skinned, mountian-dwelling Ezakh; and the greenskinned, jungle-dwelling Yacal. Ezakh are
+            larger and stronger, and they raid and pillage nearby human villages for fun. Yacal are slightly shorter, brutally ruthless masters of
+            guerilla warfare. Both partake in violence and savagery (ritual and otherwise), and neither are super friendly toward outsiders.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="human-2">Human</h3>
+          <p class="drop-item drop-human-2">
+            Since humans are the only non-magic race, they can sense magic. They know whether items have magical properties, and they can smell a
+            distinct scent when spells are cast. Since all the races live for hundreds of years, humans are kind of like the sea turtles of the
+            world, which is why the Lirans were able to overwhelm the elves with sheer numbers.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="drop-div">
+          <h3 class="drop-btn" id="dragonborn-2">Dragonborn</h3>
+          <p class="drop-item drop-dragonborn-2">
+            I'm not sure if this counts as a change, but I came up with an origin for dragonborn since Wizards of the Coast didn't bother. Rather
+            than a naturally occurring race, my dragonborn they began as human blood sorcerers who used the blood of dead dragons in an attempt to
+            gain their power. This granted them draconic abilities, but shortened their lives. Other than that, they're the same.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="elf-2">Elf</h3>
+          <p class="drop-item drop-elf-2">
+            Say goodbye to immortal grace and beauty. These dudes are straight up stone cold killers, created by the fey for one purpose: murder.
+            They love gladiator battles, they loathe weakness, their credit score is 800, and they don't get your jokes, because they only laugh at
+            the scream of their enemies. There's also a younger elf subrace, who are like used car salesmen.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="half-elf-2">Half-Elf</h3>
+          <p class="drop-item drop-half-elf-2">
+            I'm not sure how to make them distinct from elves, to be honest with you. But they're woven into the lore. Virtually every Alkarian
+            (the car salesmen) has human blood because of elven imperialism, and Sothonian (the murder guys) half-elves are like mulattoes in
+            American history, since Sothonians were slaves in the Liran Empire.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="halfling-2">Halfling</h3>
+          <p class="drop-item drop-halfling-2">
+            I added a couple subraces, but halflings are pretty much what you would expect from the Hobbit and Lord of the Rings.
+          </p>
+        </div>
+
+        <div class="drop-div">
+          <h3 class="drop-btn" id="tiefling-2">Tiefling</h3>
+          <p class="drop-item drop-tiefling-2">
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top: 2rem;">
+      As for our brave hero Shlorbak, let's say he's an elf. There is someone quite dear to me with some deep-seated psychological issues, and she
+      has a thing for elves.
+    </p>
+
+    <h2 id="racial-traits">Racial Traits</h2>
+    <p>
+      All these different races don't function exactly the same, of course. Every one has its own individual characteristics. Each race has a
+      handful of unique traits, but there are also four or five that they all share:
+    </p>
+    <ul class="trait-list">
+      <li>
+        <strong><em>Ability Score Increase.</em></strong> Each race gains a small bump to one or two ability scores. For example, gnomes get a
+        permanent +2 bonus to their Intelligence score.
+      </li>
+      <li>
+        <strong><em>Age.</em></strong> This is the only one that has no mechanical impact on the game. Older editions had rules for aging, but 5e
+        doesn't, as far as I know. It's basically just here to tell you how long each race lives, so that you can decide how old your character
+        will be.
+      </li>
+      <li>
+        <strong><em>Alignment.</em></strong> When fifth edition was first released, all the races in the Player's Handbook had this trait, which
+        describes which alignments they tend to favor. I think they stopped using this one in supplemental releases, but I'm making it cool again.
+      </li>
+      <li>
+        <strong><em>Size.</em></strong> Only barely more relevant than age in this edition. Per the rules as written, unless you're trying to move
+        through someone else's space or grapple a Large creature, I don't think you'll ever consult this stat. But it's there.
+      </li>
+      <li>
+        <strong><em>Speed.</em></strong> This trait dictates how far you can move in a single turn. As a rule, 30 feet is the standard for Medium
+        creatures, and Small creatures move 25 feet. Dwarves are a notable exception, with a Medium size and a Small speed.
+      </li>
+      <li>
+        <strong><em>Languages.</em></strong> Different people speak different languages. You can expect everyone to speak at least one common
+        language (usually called "Common," or something equally boring), but some races may start with more.
+      </li>
+    </ul>
+
+    <h2 id="subrace">Subrace</h2>
+    <p>
+      Many races are further divided into different categories based on physiology. And if you're playing with my custom race changes, almost all
+      of them are. When you play as a race with multiple subraces, you simply choose one. The listing for each race makes it clear which traits are
+      unique to which subrace, and which traits are shared by all subraces.
+    </p>
+
+    <h1 id="ability-scores">Ability Scores</h1>
+    <p>
+      Pay attention, because this part is important. These are the things that you're gonna consult every single time you make a roll for the rest
+      of your life. You have to remember these, so take notes on this section.
+    </p>
+
+    <h2 id="modifiers">Modifiers</h2>
+    <table class="table table-striped" style="float: left; margin-right: 2rem; width: fit-content;">
+      <thead>
+        <tr>
+          <th>Ability Score</th>
+          <th>Modifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>-5</td>
+        </tr>
+        <tr>
+          <td>2-3</td>
+          <td>-4</td>
+        </tr>
+        <tr>
+          <td>4-5</td>
+          <td>-3</td>
+        </tr>
+        <tr>
+          <td>6-7</td>
+          <td>-2</td>
+        </tr>
+        <tr>
+          <td>8-9</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>10-11</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>12-13</td>
+          <td>+1</td>
+        </tr>
+        <tr>
+          <td>14-15</td>
+          <td>+2</td>
+        </tr>
+        <tr>
+          <td>16-17</td>
+          <td>+3</td>
+        </tr>
+        <tr>
+          <td>18-19</td>
+          <td>+4</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>+5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Okay, I may have fibbed a little right out the gates. You won't consult your ability scores every time you roll dice. In fact, you'll almost
+      never consult them, unless you want to know how long you can hold your breath, or how far you can jump with a running start.
+    </p>
+    <p>
+      The <em>real</em> important thing is the <strong>ability score modifier</strong>. Modifiers are numbers that <em>modify</em> your rolls.
+      They're determined by your ability scores (like on the table). Higher score? Higher modifier. Lower score? Lower modifier. Super lower score?
+      Negative modifier.
+    </p>
+    <p>
+      Ability scores are really just relics of older editions. They have to be in the game, because veteran tabletop gamers (myself included) would
+      whine and cry and scream if they were removed.
+    </p>
+    <p>
+      "Whoa whoa, drill instructor," I hear you saying, "slow down! I don't even know what my ability scores are, much less my modifiers." Well, if
+      you'd shut the fuck up for a second and let me get to it, maybe you would be a little wiser for it. There are actually four ways to find out
+      your ability scores.
+    </p>
+    <p>
+      When you're done generating, though, don't forget to add your racial bonus to get the total.
+    </p>
+
+    <h2 id="the-classic">The Classic</h2>
+    <p>
+      This is the first one listed in the Player's Handbook. It's basically the norm, hence the name. It's also called the 4d6 method, or the
+      "4d6 drop one" method, for reasons that will become obvious in a second. Tried and true, we've been using this one to come up with our stats
+      since third edition, when this method became the default.
+    </p>
+    <p>
+      To use this method, roll 4d6 (four of the cube ones). Then, take away the lowest roll of the four, and add the remaining three together. It
+      gives you a value between 3 and 18, but that trends toward the upper half of the range. This was conceived as the "easy" method for earlier
+      editions, but would later become the first choice.
+    </p>
+
+    <h2 id="the-standard">The Standard</h2>
+    <p>
+      If you're some kind of pussy who's afraid of gambling, and random numbers are too scary for you, this method is probably a little better for
+      you. You get an array of 8/10/12/13/14/15, and you get to use each score once. This way you have some high scores, some not so high scores,
+      and a low score. It's quick, it's simple, and it's a good jumping off point for characterization if you're not the backstory type.
+    </p>
+
+    <h2 id="the-calculator">The Calculator</h2>
+    <table class="table table-striped" style="float: right; margin-left: 2rem; width: fit-content;">
+      <thead>
+        <tr>
+          <th>Ability Score</th>
+          <th>Point Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      If the standard array is a little too safe for you—a little too rigid, or corporate— but you like the control it gives you, then this may be
+      your option of choice.
+    </p>
+    <p>
+      Instead of being assigned a fixed stat lineup and distributing it yourself, you get to <strong>buy</strong> each ability score with a special
+      unique point system. It's like a fun little game. For accountants.
+    </p>
+    <p>
+      Each ability score starts at 8 by default, which costs you 0 points. If you want to increase one of your scores, you gotta spend a little,
+      and they get more expensive the higher you go. Or, you can decrease your scores to refund points.
+    </p>
+    <p>
+      The objective of this little game is to get an ability score array you're happy with, without spending any more than 27 points. Funny enough,
+      the standard array from the last method costs exactly 27 points.
+    </p>
+
+    <h2 id="the-fuck-you">The Fuck You</h2>
+    <p>
+      Maybe you're a bit of a daredevil. Maybe you're a sadist. Whatever you are, you think character creation is too <em>easy</em>. Where's the
+      fun in having an ability score array that you like? Well, my psychotic friend, here's the answer you're looking for.
+    </p>
+    <p>
+      This one is basically exactly like the Classic, but with a twist. Instead of rolling 4d6, you roll 3d6. Drop nothing. This is how shit got
+      done in first and second edition. What's that? You rolled three 1's? Fuck you. In fact, it was worse. You had to roll each stat in order
+      before choosing your class. Want to play a wizard, but got 18 Strength and 6 Intelligence? Fuck you. In fact, you didn't even roll. Your DM
+      did it for you. And fuck you, just because.
+    </p>
+
+    <h1 id="class">Class</h1>
+    <p>
+      Creating a D&D character is kind of like American political discourse. Some people are so distracted by race, that they are blind to the
+      real issue: class. I don't fucking know. I'm trying to tie it together with the last section. I thought that was pretty good.
+    </p>
+    <p>
+      Class is the meat and potatoes of your character. The bread and butter. Other food. The majority of the stuff written on your character sheet
+      is stuff determined by your chosen class. And you'll keep writing more stuff determined by your chosen class for the entire game. Unless you
+      never level up, which would be weird. But you get the idea.
+    </p>
+
+    <h2 id="hit-points">Points, Dice, Wife</h2>
+    <table class="table table-striped" style="float: right; margin-left: 2rem; width: fit-content;">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Hit Die</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Artificer</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Barbarian</td>
+          <td>d12</td>
+        </tr>
+        <tr>
+          <td>Bard</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Druid</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Fighter</td>
+          <td>d10</td>
+        </tr>
+        <tr>
+          <td>Monk</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Paladin</td>
+          <td>d10</td>
+        </tr>
+        <tr>
+          <td>Ranger</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Rogue</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Sorcerer</td>
+          <td>d6</td>
+        </tr>
+        <tr>
+          <td>Warlock</td>
+          <td>d8</td>
+        </tr>
+        <tr>
+          <td>Wizard</td>
+          <td>d6</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Have you ever played a video game? In that video game, was your character's general aliveness tracked via a number labeled <em>health</em> or
+      <em>vitality</em>? If so, say "Thank you, Gary Gygax."
+    </p>
+    <p>
+      Yes, Dungeons and Dragons was the first ever game to assign a single character a hit point value to determine their aliveness. Before D&D
+      came out, hit point-like systems represented how many men were in each unit you controlled in your favorite war game.
+    </p>
+    <p>
+      Most games today use a fancy exponential curve to handle stat progression, but back in the day, it was generally assumed that you didn't have
+      to pass algebra II in order to play. So, they used the next best thing: random chance.
+    </p>
+    <p>
+      Gary and his buddies came up with a solution: hit dice. <em>Hit</em> Points were determined by <em>Hit</em> Dice, and they have been ever
+      since. And they're pretty much exactly what they sound like: dice that you roll to determine your hit points.
+    </p>
+    <p>
+      Each class has its own hit die, that you roll each time you gain a level. The number you roll is the number you add to your hit points. But
+      when you're first level, the game decides to go easy on you, so everyone automatically gets a max roll. Annoying? Maybe. Easier than the
+      equation used for Vitality in Dark Souls? Absolutely.
+    </p>
+
+    <h2 id="class-proficiencies">Proficiencies</h2>
+    <p>
+      You don't become an expert at fighting or ranging or . . . sorcering . . . without picking up a certain skillset along the way. To represent
+      this, each class grants you a number of proficiencies. Typically they're weapons and armor, but all classes also gain 2-4 skill
+      proficiencies, and a few also grant tool proficiencies.
+    </p>
+    <p>
+      If you've taken a peek at your character sheet, you may see a box on there labeled "Proficiency Bonus." If you're sensing a connection,
+      you're quicker than I thought. When making a roll with a skill, you normally take the result of the roll and add your relevant ability
+      modifier. But if you're proficient with the skill (or tool) you're using, you <em>also</em> add your proficiency bonus.
+    </p>
+    <p>
+      At 1st level, your proficiency bonus is a +2. At 5th level, and every 4 levels after, it permanently increases by +1. Unlike other features
+      listed on the class page, it doesn't actually scale with class level, but total character level. So, a 5th level warlock would have the
+      same proficiency bonus as a character with 2 levels of cleric and 3 levels of druid (for whatever reason).
+    </p>
+
+    <h2 id="class-eqeuipment">Starting Equipment</h2>
+    <p>
+      You can't do your sorcering without some tools of the trade. Actually, sorcering requires very few tools compared to fighting and ranging,
+      but that's beside the point. The point is, this isn't your first day out the academy. Even at 1st level, maybe it's your second week out the
+      academy. And you have some stuff to help you along the way.
+    </p>
+    <p>
+      Generally, you'll start with a weapon, some kind of armor, a spellcasting focus if you need one, and some gear you can use to do things like
+      light torches and open blocked doors. You can find a full list of weapons, armor, and adventuring gear in the Resources section of the site.
+    </p>
+
+    <h2 id="class-features">Class Features</h2>
+    <p>
+      Now this is why we're here. Number one most important thing on the character sheet. For most classes, you'll be gaining a new ability every
+      level or two. There's honestly not much I can say about these, since they're all different (escept for Spellcasting and Fighting Style and
+      Evasion and Channel Divinity and Expertise and maybe a few others).
+    </p>
+    <p>
+      But yeah, be sure to write these down.  Each class and all of its class features can be found under the Classes category of the Resources
+      section on your sidebar.
+    </p>
+
+    <h1 id="background">Background</h1>
+  </main>
+</body>
+</html>
